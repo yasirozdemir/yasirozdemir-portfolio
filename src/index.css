@@ -2,13 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-#root {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --text: rgb(0, 27, 46);
+  --text-light: rgb(255, 255, 255);
+  --background: rgb(219, 255, 251);
+  --primary: rgb(23, 107, 135);
+  --secondary: rgb(102, 204, 197);
+  --accent: rgb(0, 27, 46);
+  --font-primary: "Poppins", sans-serif;
+}
+
+/* 
+DARK
+:root[data-theme="dark"] {
+  --text: rgb(209, 236, 255);
+  --background: rgb(0, 36, 32);
+  --primary: rgb(120, 204, 232);
+  --secondary: rgb(51, 153, 146);
+  --accent: rgb(209, 236, 255);
+} 
+*/
+
+html {
   scroll-behavior: smooth;
+  color: var(--text);
+  background-color: var(--background);
+  font-family: var(--font-primary);
+}
+
+.bg-neutral {
+  background-color: var(--background);
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.txt-light {
+  color: var(--text-light);
+}
+
+#nav-menu .nav-link {
+  text-transform: uppercase;
 }
 
 @media (min-width: 640px) {
   #nav-menu {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -22,6 +64,7 @@
     border-radius: 0.25rem;
     padding-block: 1rem;
     margin-inline: 1rem;
+    margin-block-start: 1.25rem;
     transition: visibility 300ms ease-in-out, opacity 300ms ease-in-out;
   }
 
@@ -29,4 +72,13 @@
     visibility: visible;
     opacity: 1;
   }
+}
+
+#nav-closer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
 }
