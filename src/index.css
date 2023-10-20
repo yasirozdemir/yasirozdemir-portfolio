@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#root {
+  scroll-behavior: smooth;
+}
+
+@media (min-width: 640px) {
+  #nav-menu {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  #nav-menu {
+    position: absolute;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 0.25rem;
+    padding-block: 1rem;
+    margin-inline: 1rem;
+    transition: visibility 300ms ease-in-out, opacity 300ms ease-in-out;
+  }
+
+  #nav-menu.show-on-mobile {
+    visibility: visible;
+    opacity: 1;
+  }
+}
