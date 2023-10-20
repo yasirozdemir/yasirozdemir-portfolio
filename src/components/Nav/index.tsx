@@ -6,7 +6,7 @@ const Nav: React.FC = () => {
 
   return (
     <>
-      <nav className="w-screen py-2 font-bold sticky top-0 bg-primary txt-light">
+      <nav className="w-screen py-4 sm:py-2 font-bold sticky top-0 bg-primary txt-light">
         <div className="flex sm:hidden mx-4 justify-end">
           <button
             id="nav-toggle-btn"
