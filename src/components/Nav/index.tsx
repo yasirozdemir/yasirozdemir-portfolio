@@ -2,18 +2,23 @@ import { useState } from "react";
 import NavLink from "./NavLink";
 
 const Nav: React.FC = () => {
-  const [isNavVisible, setNavVisibility] = useState(true);
+  const [isNavVisible, toggleVisibility] = useState(true);
 
   return (
     <>
       <nav className="w-screen py-2 font-bold sticky top-0 bg-primary txt-light">
         <div className="flex sm:hidden mx-4 justify-end">
           <button
+            id="nav-toggle-btn"
             type="button"
-            onClick={() => setNavVisibility(!isNavVisible)}
-            className=""
+            onClick={() => toggleVisibility(!isNavVisible)}
+            className={`flex flex-col content-between ${
+              !isNavVisible && "toggle"
+            }`}
           >
-            Hide
+            <span className="icon-line" />
+            <span className="icon-line" />
+            <span className="icon-line" />
           </button>
         </div>
         <div
@@ -22,20 +27,20 @@ const Nav: React.FC = () => {
             isNavVisible ? "" : "show-on-mobile"
           }`}
         >
-          <NavLink href="#about" title="about" func={setNavVisibility} />
-          <NavLink href="#projects" title="projects" func={setNavVisibility} />
-          <NavLink href="#contact" title="contact" func={setNavVisibility} />
+          <NavLink href="#about" title="about" func={toggleVisibility} />
+          <NavLink href="#projects" title="projects" func={toggleVisibility} />
+          <NavLink href="#contact" title="contact" func={toggleVisibility} />
         </div>
+        {!isNavVisible && (
+          <div
+            id="nav-closer"
+            className="block sm:hidden"
+            onClick={() => {
+              toggleVisibility(!isNavVisible);
+            }}
+          />
+        )}
       </nav>
-      {!isNavVisible && (
-        <div
-          id="nav-closer"
-          className="block sm:hidden"
-          onClick={() => {
-            setNavVisibility(!isNavVisible);
-          }}
-        />
-      )}
     </>
   );
 };
