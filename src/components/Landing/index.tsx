@@ -1,6 +1,27 @@
+import { useState, useEffect } from "react";
+
 const Landing = () => {
+  const [scrollOpacity, setScrollOpacity] = useState(1);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const maxScroll = window.innerHeight;
+      const opacity = Math.max(1 - window.scrollY / maxScroll, 0);
+      setScrollOpacity(opacity);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div>
+    <div
+      id="landing"
+      className="flex flex-col justify-center align-center relative h-screen"
+    >
       <div id="title-subtitle-container" className="px-4">
         <h1 className="text-center text-3xl font-extrabold">
           Muhammed Yasir Ozdemir
@@ -15,6 +36,7 @@ const Landing = () => {
           alt="pfp"
         />
       </div>
+      <div className="landing-background" style={{ opacity: scrollOpacity }} />
     </div>
   );
 };

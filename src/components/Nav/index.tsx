@@ -6,7 +6,7 @@ const Nav: React.FC = () => {
 
   return (
     <>
-      <nav className="w-screen py-4 sm:py-2 font-bold sticky top-0 bg-primary txt-light">
+      <nav className="w-screen py-4 sm:py-2 font-bold sticky top-0 bg-neutral sm:flex sm:justify-center sm:items-center">
         <div className="flex sm:hidden mx-4 justify-end">
           <button
             id="nav-toggle-btn"
@@ -23,7 +23,7 @@ const Nav: React.FC = () => {
         </div>
         <div
           id="nav-menu"
-          className={`bg-primary flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-20 ${
+          className={`flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-20 ${
             isNavVisible ? "" : "show-on-mobile"
           }`}
         >

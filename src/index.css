@@ -5,31 +5,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-  --text: rgb(0, 27, 46);
-  --text-light: rgb(255, 255, 255);
-  --background: rgb(219, 255, 251);
-  --primary: rgb(23, 107, 135);
-  --secondary: rgb(102, 204, 197);
-  --accent: rgb(0, 27, 46);
-  --font-primary: "Poppins", sans-serif;
+  --text: rgb(255, 255, 255);
+  --text-secondary: rgb(40, 255, 191);
+  --text-dark: rgb(34, 40, 49);
+  --background: rgb(34, 40, 49);
+  --primary: rgb(113, 201, 206);
+  --secondary: rgb(166, 227, 233);
+  --font: "Poppins", sans-serif;
 }
-
-/* 
-DARK
-:root[data-theme="dark"] {
-  --text: rgb(209, 236, 255);
-  --background: rgb(0, 36, 32);
-  --primary: rgb(120, 204, 232);
-  --secondary: rgb(51, 153, 146);
-  --accent: rgb(209, 236, 255);
-} 
-*/
 
 html {
   scroll-behavior: smooth;
   color: var(--text);
   background-color: var(--background);
-  font-family: var(--font-primary);
+  font-family: var(--font);
 }
 
 .bg-neutral {
@@ -40,20 +29,25 @@ html {
   background-color: var(--primary);
 }
 
-.txt-light {
-  color: var(--text-light);
+.bg-secondary {
+  background-color: var(--secondary);
 }
 
-#nav-menu .nav-link {
-  text-transform: uppercase;
+.txt-secondary {
+  color: var(--text-secondary);
 }
 
-#nav-toggle-btn {
-  gap: 0.3rem;
+.txt-dark {
+  color: var(--text-dark);
+}
+
+nav {
+  border-block-end: 0.5px solid var(--text);
+  height: 50px;
 }
 
 nav .icon-line {
-  background-color: var(--text-light);
+  background-color: var(--text);
   border-radius: 2px;
   height: 2px;
   transition: all 300ms ease-in-out;
@@ -83,6 +77,17 @@ nav .toggle .icon-line:nth-of-type(3) {
   transform-origin: 10% 90%;
 }
 
+#nav-menu .nav-link {
+  text-transform: uppercase;
+  padding-inline: 0.4rem;
+  padding-block: 0.2rem;
+  border-radius: 0.2rem;
+}
+
+#nav-toggle-btn {
+  gap: 0.3rem;
+}
+
 @media (min-width: 640px) {
   #nav-menu {
     font-size: 1.25rem;
@@ -99,8 +104,10 @@ nav .toggle .icon-line:nth-of-type(3) {
     border-radius: 0.25rem;
     padding-block: 1rem;
     margin-inline: 1rem;
-    margin-block-start: 1.75rem;
-    transition: visibility 300ms ease-in-out, opacity 300ms ease-in-out;
+    margin-block-start: 1.5rem;
+    color: var(--text-dark);
+    background: var(--secondary);
+    transition: all 300ms ease-in-out;
   }
 
   #nav-menu.show-on-mobile {
@@ -116,6 +123,21 @@ nav .toggle .icon-line:nth-of-type(3) {
   right: 0;
   height: 100vh;
   z-index: -1;
+}
+
+.landing-background {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background-image: url(https://res.cloudinary.com/yasirdev/image/upload/v1680299481/portfolio/bg_yfxulf.jpg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 #picture-container {
