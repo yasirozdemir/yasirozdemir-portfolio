@@ -3,7 +3,7 @@ import CV from "../../../public/assets/M_Yasir_Ozdemir_CV.pdf";
 const About = () => {
   return (
     <section id="about" className="py-10 bg-primary">
-      <div className="container mx-auto px-4 md:px-20 text-center md:text-left">
+      <div className="custom-container mx-auto text-center md:text-left">
         <h3 className="text-3xl md:indent-6 font-bold mb-4">About Me</h3>
         <p className="text-xl md:indent-6 leading-6 mb-6 font-semibold">
           I'm a recent graduate of the EPICODE full-stack developer boot camp,

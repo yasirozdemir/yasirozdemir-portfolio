@@ -62,7 +62,7 @@ nav .toggle .icon-line:nth-of-type(3) {
     margin-inline: 1rem;
     margin-block-start: 1.5rem;
     color: var(--text-dark);
-    background: var(--secondary);
+    background: var(--bg-secondary);
     transition: all 300ms ease-in-out;
   }
 

@@ -1,0 +1,68 @@
+#contact .img-wrapper {
+  position: relative;
+  z-index: 200;
+}
+
+#contact .img-wrapper::before {
+  position: absolute;
+  content: "";
+  top: 90%;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  border-radius: 50%;
+  z-index: -100;
+  background-color: rgba(8, 23, 46, 0.3);
+}
+
+@media (min-width: 640px) {
+  #contact form {
+    font-size: 1.4rem;
+  }
+}
+
+#contact form input,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  background-color: var(--bg-secondary);
+  backdrop-filter: opacity(20%);
+  color: inherit;
+  -webkit-backdrop-filter: opacity(20%);
+  border: transparent;
+  transition: 300ms;
+}
+
+#contact form input:focus,
+textarea:focus,
+#contact form input:hover,
+textarea:hover {
+  background-color: var(--focus-bg);
+}
+
+#contact form button {
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  font-weight: 500;
+  border: transparent;
+  transition: all 500ms;
+  color: #8a919c;
+  background-color: var(--bg-secondary);
+  flex-grow: 1;
+}
+
+#contact form button:hover {
+  background-color: var(--text);
+  color: var(--bg-secondary);
+}
+
+#contact form button:focus,
+#contact form button:focus-visible {
+  outline: transparent;
+  background-color: var(--focus-bg);
+  color: var(--text);
+}
