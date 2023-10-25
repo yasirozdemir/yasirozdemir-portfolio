@@ -1,0 +1,21 @@
+footer {
+  height: 50px;
+  border-block-start: solid 1px rgba(173, 173, 173, 0.5);
+  fill: rgb(173, 173, 173);
+}
+
+footer svg {
+  fill: inherit;
+}
+
+footer a {
+  transition: all 250ms ease;
+}
+
+footer a:hover {
+  fill: var(--text);
+}
+
+footer span {
+  color: rgb(173, 173, 173);
+}

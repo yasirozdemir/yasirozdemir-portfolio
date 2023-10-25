@@ -2,7 +2,7 @@ import CV from "../../../public/assets/M_Yasir_Ozdemir_CV.pdf";
 
 const About = () => {
   return (
-    <section id="about" className="py-10 bg-primary">
+    <section id="about" className="pt-16 pb-10 bg-primary">
       <div className="custom-container mx-auto text-center md:text-left">
         <h3 className="text-3xl md:indent-6 font-bold mb-4">About Me</h3>
         <p className="text-xl md:indent-6 leading-6 mb-6 font-semibold">
