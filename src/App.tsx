@@ -6,6 +6,7 @@ function App() {
     <main>
       <Landing />
       <Nav />
+      <h1 className="bg-red-500 h-screen">hel</h1>
     </main>
   );
 }

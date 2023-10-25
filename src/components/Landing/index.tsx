@@ -1,13 +1,16 @@
 import { useState, useEffect } from "react";
+import bgUrl from "../../../public/assets/boston.jpg";
+import picUrl from "../../../public/assets/myo.png";
 
 const Landing = () => {
-  const [scrollOpacity, setScrollOpacity] = useState(1);
+  const initialOpc = 0.75;
+  const [opacity, setOpacity] = useState(initialOpc);
 
   useEffect(() => {
     const handleScroll = () => {
       const maxScroll = window.innerHeight;
-      const opacity = Math.max(1 - window.scrollY / maxScroll, 0);
-      setScrollOpacity(opacity);
+      const opc = Math.max(initialOpc - window.scrollY / maxScroll, 0);
+      setOpacity(opc);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -18,25 +21,25 @@ const Landing = () => {
   }, []);
 
   return (
-    <div
-      id="landing"
-      className="flex flex-col justify-center align-center relative h-screen"
-    >
-      <div id="title-subtitle-container" className="px-4">
-        <h1 className="text-center text-3xl font-extrabold">
-          Muhammed Yasir Ozdemir
-        </h1>
-        <h2 className="text-center text-xl font-extrabold">
-          Full Stack Developer
-        </h2>
+    <div id="landing" className="flex flex-col-reverse h-screen">
+      <div id="pic-container" className="">
+        <img src={picUrl} alt="Picture of M. Yasir Ozdemir" className="w-100" />
       </div>
-      <div id="picture-container" className="rounded-lg overflow-hidden">
-        <img
-          src="https://res.cloudinary.com/yasirdev/image/upload/v1679173887/portfolio/pfp_zk9j0d.jpg"
-          alt="pfp"
-        />
+      <div className="flex flex-col h-100">
+        <div className="text-3xl sm:text-4xl md:text-6xl lg:text-9xl px-2 sm:px-0 mx-auto font-secondary">
+          <span className="lg:ml-20">Hello, I'm</span>
+          <h1 className="">Muhammed Yasir Ozdemir</h1>
+          <h2 className="text-right lg:mr-20">Full-Stack Developer</h2>
+        </div>
+        <button type="button">Scroll down to learn more about me!</button>
       </div>
-      <div className="landing-background" style={{ opacity: scrollOpacity }} />
+      <div
+        className="landing-background"
+        style={{
+          opacity,
+          backgroundImage: `url(${bgUrl})`,
+        }}
+      />
     </div>
   );
 };

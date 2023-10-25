@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
   --text: rgb(255, 255, 255);
@@ -12,6 +12,7 @@
   --primary: rgb(113, 201, 206);
   --secondary: rgb(166, 227, 233);
   --font: "Poppins", sans-serif;
+  --font-secondary: "DM Serif Display", serif;
 }
 
 html {
@@ -33,12 +34,16 @@ html {
   background-color: var(--secondary);
 }
 
-.txt-secondary {
+.text-secondary {
   color: var(--text-secondary);
 }
 
-.txt-dark {
+.text-dark {
   color: var(--text-dark);
+}
+
+.font-secondary {
+  font-family: var(--font-secondary) !important;
 }
 
 nav {
@@ -125,6 +130,38 @@ nav .toggle .icon-line:nth-of-type(3) {
   z-index: -1;
 }
 
+#landing h1::selection,
+#landing h2::selection,
+#landing span::selection {
+  background: var(--background);
+}
+
+#landing h1::-moz-selection,
+#landing h2::-moz-selection,
+#landing span::-moz-selection {
+  background: var(--background);
+}
+
+#pic-container {
+  height: 15rem;
+}
+
+@media (min-width: 640px) {
+  #pic-container {
+    height: 20rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  #pic-container {
+    height: 25rem;
+  }
+}
+
+#pic-container img {
+  height: 100%;
+}
+
 .landing-background {
   content: "";
   position: absolute;
@@ -133,7 +170,6 @@ nav .toggle .icon-line:nth-of-type(3) {
   bottom: 0;
   right: 0;
   z-index: -1;
-  background-image: url(https://res.cloudinary.com/yasirdev/image/upload/v1680299481/portfolio/bg_yfxulf.jpg);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -141,12 +177,7 @@ nav .toggle .icon-line:nth-of-type(3) {
 }
 
 #picture-container {
-  width: 10rem;
-  height: 10rem;
+  width: 12rem;
+  height: auto;
   margin-inline: auto;
-}
-
-#title-subtitle-container h2 {
-  color: var(--background);
-  text-shadow: 0px 0px 5px var(--text);
 }
