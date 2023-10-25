@@ -5,7 +5,7 @@ import "../../styles/landing.css";
 import TypewriterComponent from "typewriter-effect";
 
 const Landing = () => {
-  const initialBgOpc = 0.75;
+  const initialBgOpc = 1;
   const [opacity, setOpacity] = useState(initialBgOpc);
 
   useEffect(() => {
@@ -23,7 +23,7 @@ const Landing = () => {
   }, []);
 
   return (
-    <div id="landing" className="flex flex-col-reverse h-screen">
+    <section id="landing" className="flex flex-col-reverse h-screen">
       <div
         id="pic-container"
         className="flex items-end justify-center sm:justify-start absolute-full-page"
@@ -69,22 +69,21 @@ const Landing = () => {
             <span className="hidden sm:inline-block">eloper</span>
           </h2>
         </div>
-        <a
-          href="#about"
-          className="btn btn-light px-4 py-1 rounded-md mt-4 sm:mt-8 text-sm sm:text-xl font-bold"
-        >
+        <a href="#about" className="btn btn-light mt-4 sm:mt-8">
           About Me
         </a>
       </div>
-      <div
-        id="landing-background"
-        className="absolute-full-page"
-        style={{
-          opacity,
-          backgroundImage: `url(${bgUrl})`,
-        }}
-      />
-    </div>
+      {opacity !== 0 && (
+        <div
+          id="landing-background"
+          className="absolute-full-page"
+          style={{
+            opacity,
+            backgroundImage: `url(${bgUrl})`,
+          }}
+        />
+      )}
+    </section>
   );
 };
 
