@@ -43,7 +43,7 @@ const Landing = () => {
               cursorClassName:
                 "Typewriter__cursor text-2xl md:text-3xl lg:text-5xl xl:text-6xl",
               wrapperClassName:
-                "Typewriter__wrapper lg:ml-14 text-2xl md:text-3xl lg:text-5xl xl:text-6xl",
+                "Typewriter__wrapper lg:ml-16 text-2xl md:text-3xl lg:text-5xl xl:text-6xl",
             }}
             onInit={(typewriter) => {
               typewriter
@@ -64,12 +64,17 @@ const Landing = () => {
             <span className="sm:hidden">M.</span>
             <span> Yasir Ozdemir</span>
           </h1>
-          <h2 className="lg:mr-14 text-right text-2xl md:text-3xl lg:text-5xl xl:text-6xl">
+          <h2 className="lg:mr-16 text-right text-2xl md:text-3xl lg:text-5xl xl:text-6xl">
             <span>Full-Stack Dev</span>
             <span className="hidden sm:inline-block">eloper</span>
           </h2>
         </div>
-        <a href="#about">Learn more about me!</a>
+        <a
+          href="#about"
+          className="btn btn-light px-4 py-1 rounded-md mt-4 sm:mt-8 text-sm sm:text-xl font-bold"
+        >
+          About Me
+        </a>
       </div>
       <div
         id="landing-background"

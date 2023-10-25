@@ -7,7 +7,7 @@ const Nav = () => {
 
   return (
     <>
-      <nav className="w-screen py-4 sm:py-2 font-bold sticky top-0 sm:flex sm:justify-center sm:items-center bg-dark">
+      <nav className="w-screen py-4 sm:py-2 font-bold sticky top-0 sm:flex sm:justify-center sm:items-center bg-secondary">
         <div className="flex sm:hidden mx-4 justify-end">
           <button
             id="nav-toggle-btn"
