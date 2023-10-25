@@ -6,7 +6,10 @@ function App() {
     <main>
       <Landing />
       <Nav />
-      <h1 className="bg-red-500 h-screen">hel</h1>
+      <h1 id="about" className="bg-red-500 h-screen">
+        hel
+      </h1>
+      <h1 className="bg-red-300 h-screen">hel</h1>
     </main>
   );
 }
