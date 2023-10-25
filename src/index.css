@@ -22,7 +22,7 @@ html {
   font-family: var(--font);
 }
 
-.bg-neutral {
+.bg-dark {
   background-color: var(--background);
 }
 
@@ -130,54 +130,53 @@ nav .toggle .icon-line:nth-of-type(3) {
   z-index: -1;
 }
 
-#landing h1::selection,
-#landing h2::selection,
-#landing span::selection {
-  background: var(--background);
-}
-
-#landing h1::-moz-selection,
-#landing h2::-moz-selection,
-#landing span::-moz-selection {
-  background: var(--background);
-}
-
-#pic-container {
-  height: 15rem;
-}
-
-@media (min-width: 640px) {
-  #pic-container {
-    height: 20rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  #pic-container {
-    height: 25rem;
-  }
-}
-
-#pic-container img {
-  height: 100%;
-}
-
-.landing-background {
-  content: "";
+.absolute-full-page {
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  z-index: -1;
+}
+
+#landing-content h1::selection,
+#landing-content h2::selection,
+#landing-content span::selection {
+  background: var(--background);
+}
+
+#landing-content h1::-moz-selection,
+#landing-content h2::-moz-selection,
+#landing-content span::-moz-selection {
+  background: var(--background);
+}
+
+#pic-container {
+  z-index: -100;
+  display: flex;
+  align-items: end;
+}
+
+#pic-container img {
+  width: 15rem;
+  height: auto;
+}
+
+@media (min-width: 640px) {
+  #pic-container img {
+    width: 20rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  #pic-container img {
+    width: 25rem;
+  }
+}
+
+#landing-background {
+  z-index: -200;
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-}
-
-#picture-container {
-  width: 12rem;
-  height: auto;
-  margin-inline: auto;
 }

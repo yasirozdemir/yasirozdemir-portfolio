@@ -1,12 +1,12 @@
 import { useState } from "react";
 import NavLink from "./NavLink";
 
-const Nav: React.FC = () => {
+const Nav = () => {
   const [isNavVisible, toggleVisibility] = useState(true);
 
   return (
     <>
-      <nav className="w-screen py-4 sm:py-2 font-bold sticky top-0 bg-neutral sm:flex sm:justify-center sm:items-center">
+      <nav className="w-screen py-4 sm:py-2 font-bold sticky top-0 sm:flex sm:justify-center sm:items-center bg-dark">
         <div className="flex sm:hidden mx-4 justify-end">
           <button
             id="nav-toggle-btn"
