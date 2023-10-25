@@ -1,0 +1,42 @@
+#landing-content h1::selection,
+#landing-content h2::selection,
+#landing-content span::selection {
+  background: var(--background);
+}
+
+#landing-content h1::-moz-selection,
+#landing-content h2::-moz-selection,
+#landing-content span::-moz-selection {
+  background: var(--background);
+}
+
+#landing-content h1,
+#landing-content h2,
+#landing-content span {
+  text-shadow: 0px 0px 8px var(--background);
+}
+
+#pic-container {
+  z-index: -100;
+}
+
+#pic-container img {
+  width: 12rem;
+  height: auto;
+  -webkit-filter: drop-shadow(0px 0px 8px var(--background));
+  filter: drop-shadow(0px 0px 8px var(--background));
+}
+
+@media (min-width: 640px) {
+  #pic-container img {
+    width: 20rem;
+  }
+}
+
+#landing-background {
+  z-index: -200;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}

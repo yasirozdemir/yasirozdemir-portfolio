@@ -1,5 +1,6 @@
 import { useState } from "react";
 import NavLink from "./NavLink";
+import "../../styles/nav.css";
 
 const Nav = () => {
   const [isNavVisible, toggleVisibility] = useState(true);
