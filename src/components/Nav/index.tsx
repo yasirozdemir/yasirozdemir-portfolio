@@ -26,7 +26,7 @@ const Nav = () => {
 
   return (
     <nav
-      className="fixed top-0 w-full flex justify-center items-center"
+      className="fixed top-0 w-full flex sm:justify-center sm:items-center"
       ref={navRef}
     >
       <div className="flex sm:hidden justify-between items-center px-4 py-4 w-full">

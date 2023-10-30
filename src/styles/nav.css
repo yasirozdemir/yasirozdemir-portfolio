@@ -15,6 +15,7 @@ nav {
 @media (max-width: 640px) {
   #nav-menu {
     position: absolute;
+    top: 60px;
     left: 0;
     right: 0;
     visibility: hidden;
