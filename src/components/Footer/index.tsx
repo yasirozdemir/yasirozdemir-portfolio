@@ -3,7 +3,7 @@ const Footer = () => {
     <footer className="bg-cyan-700 text-white">
       <ul className="flex flex-wrap py-4 justify-center items-center gap-4">
         <li>
-          <a href="" target="_blank">
+          <a href="https://www.linkedin.com/in/yasirozdemir" target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="36"
@@ -17,7 +17,7 @@ const Footer = () => {
           </a>
         </li>
         <li>
-          <a href="" target="_blank">
+          <a href="https://github.com/yasirozdemir" target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="36"
@@ -31,7 +31,7 @@ const Footer = () => {
           </a>
         </li>
         <li>
-          <a href="" target="_blank">
+          <a href="https://www.instagram.com/yasirunofficial_" target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="36"
@@ -45,7 +45,7 @@ const Footer = () => {
           </a>
         </li>
         <li>
-          <a href="" target="_blank">
+          <a href="https://youtube.com/@MuhammedYasirOzdemir" target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="36"
@@ -59,7 +59,7 @@ const Footer = () => {
           </a>
         </li>
         <li>
-          <a href="" target="_blank">
+          <a href="https://medium.com/@muhammedyasirozdemir" target="_blank">
             <svg
               width="36"
               height="36"

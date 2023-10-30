@@ -44,3 +44,11 @@ main {
     max-width: 1140px;
   }
 }
+
+#contact {
+  background-image: url(../../public/assets/bg.svg);
+}
+
+#contact form {
+  background-color: #fff;
+}

@@ -7,8 +7,8 @@ import Nav from "./components/Nav";
 function App() {
   return (
     <main>
-      <Nav />
       <Landing />
+      <Nav />
       <About />
       <Contact />
       <Footer />

@@ -5,7 +5,8 @@ const Landing = () => {
     <section id="landing" className="h-screen">
       <div className="flex flex-col justify-center items-center h-full">
         <div className="text-3xl text-center md:text-4xl lg:text-5xl">
-          Hello, I'm <span className="font-black">Yasir Ozdemir</span>
+          Hello, I'm{" "}
+          <span className="font-black text-cyan-700">Yasir Ozdemir</span>
           <br />
           I'm a Full-Stack Developer
         </div>
