@@ -1,48 +1,56 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import NavLink from "./NavLink";
 import "../../styles/nav.css";
 
 const Nav = () => {
-  const [isNavVisible, toggleVisibility] = useState(true);
+  const [isNavVisible, setIsNavVisible] = useState(false);
+  const navRef = useRef<HTMLUListElement | null>(null);
+
+  const toggleNav = () => {
+    setIsNavVisible(!isNavVisible);
+  };
+
+  const closeNav = (e: MouseEvent) => {
+    if (navRef.current && !navRef.current.contains(e.target as Node)) {
+      setIsNavVisible(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", closeNav);
+    return () => {
+      document.removeEventListener("click", closeNav);
+    };
+  }, []);
 
   return (
-    <>
-      <nav className="w-screen py-4 sm:py-2 sticky top-0 sm:flex sm:justify-center sm:items-center bg-secondary">
-        <div className="flex sm:hidden mx-4 justify-end">
-          <button
-            id="nav-toggle-btn"
-            type="button"
-            onClick={() => toggleVisibility(!isNavVisible)}
-            className={`flex flex-col content-between ${
-              !isNavVisible && "toggle"
-            }`}
-          >
-            <span className="icon-line" />
-            <span className="icon-line" />
-            <span className="icon-line" />
-          </button>
-        </div>
-        <div
-          id="nav-menu"
-          className={`flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-20 ${
-            isNavVisible ? "" : "show-on-mobile"
-          }`}
+    <nav className="sticky top-0 bg-slate-200" ref={navRef}>
+      <div className="flex sm:hidden justify-between items-center px-4 py-4">
+        <a href="#landing" className="tracking-widest text-2xl font-extrabold">
+          MYO
+        </a>
+        <button
+          type="button"
+          id="nav-toggle"
+          className={isNavVisible ? "on" : "off"}
+          onClick={toggleNav}
         >
-          <NavLink href="#about" title="about" func={toggleVisibility} />
-          <NavLink href="#projects" title="projects" func={toggleVisibility} />
-          <NavLink href="#contact" title="contact" func={toggleVisibility} />
-        </div>
-        {!isNavVisible && (
-          <div
-            id="nav-closer"
-            className="block sm:hidden"
-            onClick={() => {
-              toggleVisibility(!isNavVisible);
-            }}
-          />
-        )}
-      </nav>
-    </>
+          <span />
+          <span />
+          <span />
+        </button>
+      </div>
+      <ul
+        id="nav-menu"
+        className={`flex flex-col sm:flex-row justify-center items-center bg-slate-200 ${
+          isNavVisible ? "show" : ""
+        }`}
+      >
+        <NavLink title="about" />
+        <NavLink title="projects" />
+        <NavLink title="contact" />
+      </ul>
+    </nav>
   );
 };
 

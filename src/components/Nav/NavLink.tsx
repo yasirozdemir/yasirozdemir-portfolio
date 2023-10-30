@@ -1,20 +1,12 @@
 interface INavLinkProps {
-  href: string;
   title: string;
-  func: (arg: boolean) => void;
 }
 
-const NavLink = ({ href, title, func }: INavLinkProps) => {
+const NavLink = ({ title }: INavLinkProps) => {
   return (
-    <a
-      href={href}
-      className="nav-link"
-      onClick={() => {
-        func(true);
-      }}
-    >
-      {title}
-    </a>
+    <li className="nav_link uppercase font-bold px-12 py-4 tracking-wider">
+      <a href={"#" + title}>{title}</a>
+    </li>
   );
 };
 
