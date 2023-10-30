@@ -25,7 +25,7 @@ const Nav = () => {
   }, []);
 
   return (
-    <nav className="sticky top-0" ref={navRef}>
+    <nav className="fixed top-0 w-full" ref={navRef}>
       <div className="flex sm:hidden justify-between items-center px-4 py-4">
         <a href="#landing" className="tracking-wider text-2xl font-bold">
           MYO

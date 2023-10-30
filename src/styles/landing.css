@@ -1,4 +1,3 @@
 #landing {
-  height: 100vh;
-  background: url(../../public/assets/bg.svg);
+  background-image: url(../../public/assets/bg.svg);
 }
