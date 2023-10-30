@@ -8,9 +8,8 @@ html {
   scroll-behavior: smooth;
 }
 
-main {
+body {
   font-family: "Kanit", sans-serif;
-  scroll-padding-top: 60px;
 }
 
 .custom-container {
