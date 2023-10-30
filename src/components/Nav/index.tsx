@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import NavLink from "./NavLink";
 import "../../styles/nav.css";
+import ToggleButton from "./ToggleButton";
 
 const Nav = () => {
   const [isNavVisible, setIsNavVisible] = useState(false);
@@ -29,16 +30,7 @@ const Nav = () => {
         <a href="#landing" className="tracking-widest text-2xl font-extrabold">
           MYO
         </a>
-        <button
-          type="button"
-          id="nav-toggle"
-          className={isNavVisible ? "on" : "off"}
-          onClick={toggleNav}
-        >
-          <span />
-          <span />
-          <span />
-        </button>
+        <ToggleButton isNavVisible={isNavVisible} toggleNav={toggleNav} />
       </div>
       <ul
         id="nav-menu"
@@ -46,9 +38,9 @@ const Nav = () => {
           isNavVisible ? "show" : ""
         }`}
       >
-        <NavLink title="about" />
-        <NavLink title="projects" />
-        <NavLink title="contact" />
+        <NavLink title="about" toggleNav={toggleNav} />
+        <NavLink title="projects" toggleNav={toggleNav} />
+        <NavLink title="contact" toggleNav={toggleNav} />
       </ul>
     </nav>
   );
