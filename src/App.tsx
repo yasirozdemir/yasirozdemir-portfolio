@@ -1,10 +1,11 @@
+import Landing from "./components/Landing";
 import Nav from "./components/Nav";
 
 function App() {
   return (
     <main>
+      <Landing />
       <Nav />
-      <h1 className="h-screen bg-green-300"> Hello</h1>
     </main>
   );
 }
