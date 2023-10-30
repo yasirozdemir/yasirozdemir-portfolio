@@ -38,10 +38,10 @@ const Contact = () => {
             <label htmlFor="message" className="mb-2 font-bold">
               Message
             </label>
-            <input
-              type="text"
+            <textarea
               name="message"
               id="message"
+              rows={10}
               placeholder="Your Message"
               className={inputClassList}
             />
