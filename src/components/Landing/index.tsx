@@ -12,7 +12,7 @@ const Landing = () => {
         <a
           href="#about"
           type="button"
-          className="text-white text-xl font-bold bg-cyan-800 px-8 py-4 rounded-lg shadow-lg mt-10 "
+          className="text-white text-xl font-bold bg-cyan-700 px-8 py-4 rounded-lg shadow-lg mt-10 "
         >
           ABOUT ME
         </a>
