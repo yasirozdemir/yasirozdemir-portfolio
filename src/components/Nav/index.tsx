@@ -25,16 +25,16 @@ const Nav = () => {
   }, []);
 
   return (
-    <nav className="sticky top-0 bg-slate-200" ref={navRef}>
+    <nav className="sticky top-0" ref={navRef}>
       <div className="flex sm:hidden justify-between items-center px-4 py-4">
-        <a href="#landing" className="tracking-widest text-2xl font-extrabold">
+        <a href="#landing" className="tracking-widest text-2xl font-bold">
           MYO
         </a>
         <ToggleButton isNavVisible={isNavVisible} toggleNav={toggleNav} />
       </div>
       <ul
         id="nav-menu"
-        className={`flex flex-col sm:flex-row justify-center items-center bg-slate-200 ${
+        className={`flex flex-col sm:flex-row justify-center items-center ${
           isNavVisible ? "show" : ""
         }`}
       >
