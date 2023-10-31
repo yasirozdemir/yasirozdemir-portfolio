@@ -41,7 +41,7 @@ const Contact = () => {
             <textarea
               name="message"
               id="message"
-              rows={10}
+              rows={8}
               placeholder="Your Message"
               className={inputClassList}
             />
