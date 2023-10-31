@@ -1,6 +1,3 @@
-import "../../styles/landing.css";
-import { LinkPrimary } from "../Reusables/LinkPrimary";
-
 const Landing = () => {
   return (
     <section id="landing" className="h-dynamic-screen">
@@ -11,7 +8,6 @@ const Landing = () => {
           <br />
           I'm a Full-Stack Developer
         </div>
-        <LinkPrimary href="#about" innerText="ABOUT ME" customClasses="mt-10" />
       </div>
     </section>
   );

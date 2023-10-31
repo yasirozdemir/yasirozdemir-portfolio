@@ -1,5 +1,3 @@
-import "../../styles/toggleButton.css";
-
 interface IToggleButtonProps {
   isNavVisible: boolean;
   toggleNav: () => void;
