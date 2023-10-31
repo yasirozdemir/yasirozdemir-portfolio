@@ -67,3 +67,7 @@ body {
 .projects-container article + article {
   margin-block-start: 3rem;
 }
+
+footer {
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+}

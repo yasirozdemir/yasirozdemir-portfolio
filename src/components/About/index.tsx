@@ -6,17 +6,16 @@ const About = () => {
 
   return (
     <section id="about">
-      <div className="custom-container py-20">
-        <div className="max-w-xs mx-auto">
-          <img
-            src="https://res.cloudinary.com/yasirdev/image/upload/v1679173887/portfolio/pfp_zk9j0d.jpg"
-            // src="../../../public/assets/favicon.jpeg"
-            alt=""
-            className="w-100 shadow-2xl"
-            style={{ borderRadius: "70% 30% 70% 30% / 30% 73% 27% 70%" }}
-          />
-        </div>
-        <div className="mt-20 grid grid-rows-1 sm:grid-cols-2 gap-10">
+      <div className="py-20 max-w-xs mx-auto">
+        <img
+          src="https://res.cloudinary.com/yasirdev/image/upload/v1679173887/portfolio/pfp_zk9j0d.jpg"
+          alt="Yasir Ozdemir Photo"
+          className="w-100 shadow-2xl"
+          style={{ borderRadius: "70% 30% 70% 30% / 30% 73% 27% 70%" }}
+        />
+      </div>
+      <div className="custom-container pb-20">
+        <div className="grid grid-rows-1 sm:grid-cols-2 gap-10">
           <div>
             <H3 innerText="Get to know me!" />
             <p className="mb-4 text-md sm:text-lg text-gray-700">
