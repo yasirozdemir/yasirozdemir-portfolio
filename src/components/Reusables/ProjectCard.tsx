@@ -14,15 +14,20 @@ export const ProjectCard = ({
   img_src,
 }: IProjectCardProps) => {
   return (
-    <article className="project_card rounded-sm shadow-2xl grid grid-rows-1 sm:grid-cols-2 gap-4 sm:gap-10 overflow-hidden">
+    <article className="project_card rounded-sm shadow-2xl grid grid-rows-1 md:grid-cols-2 gap-4 md:gap-10 overflow-hidden">
       <div className="my-auto overflow-hidden rounded-sm">
         <img src={img_src} alt={title.toLowerCase() + " web view"} />
       </div>
-      <div className="flex flex-col justify-center pb-4 sm:pb-0 px-4 sm:px-0">
+      <div className="flex flex-col justify-center items-center md:items-start py-4 lg:py-0 px-4 sm:pr-4">
         <H3 innerText={title} customClasses="text-cyan-700" />
         <p className="text-md sm:text-lg text-gray-700 mb-4">{summary}</p>
-        <a href={github_link} target="_blank">
-          Github Repository
+        <a
+          href={github_link}
+          target="_blank"
+          className="text-cyan-700 font-bold inline-block mx-auto md:mx-0 md:self-start"
+          style={{ borderBlockEnd: "2px solid", lineHeight: "1rem" }}
+        >
+          View on Github
         </a>
       </div>
     </article>

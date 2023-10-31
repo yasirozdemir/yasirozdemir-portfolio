@@ -7,7 +7,7 @@ const About = () => {
   return (
     <section id="about">
       <div className="custom-container py-20">
-        <div className="max-w-sm mx-auto">
+        <div className="max-w-xs mx-auto">
           <img
             src="https://res.cloudinary.com/yasirdev/image/upload/v1679173887/portfolio/pfp_zk9j0d.jpg"
             // src="../../../public/assets/favicon.jpeg"
