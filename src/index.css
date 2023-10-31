@@ -48,6 +48,11 @@ body {
   background-image: url(../../public/assets/bg.svg);
 }
 
-#contact form {
+#contact form,
+#projects .project_card {
   background-color: #fff;
+}
+
+.projects-container article + article {
+  margin-block-start: 3rem;
 }

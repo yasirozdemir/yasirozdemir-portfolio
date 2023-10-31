@@ -1,29 +1,8 @@
+import { languages, skills } from "../../data";
 import { H3 } from "../Reusables/H3";
 
 const About = () => {
   const classList = "px-4 py-2 rounded-md shadow-md bg-cyan-700 text-white";
-  const skills: string[] = [
-    "HTML",
-    "CSS",
-    "Javascript",
-    "Typescript",
-    "React",
-    "Redux",
-    "Bootstrap",
-    "Tailwind",
-    "Node.js",
-    "Express",
-    "MongoDB",
-    "PostgreSQL",
-    "Vite.js",
-    "Postman API & Docs",
-    "OpenAI GPT 3.5 Turbo API",
-  ];
-  const languages: { lan: string; lev: string }[] = [
-    { lan: "Turkish", lev: "Native" },
-    { lan: "English", lev: "Professional" },
-    { lan: "German", lev: "Beginner" },
-  ];
 
   return (
     <section id="about">

@@ -48,7 +48,7 @@ const Contact = () => {
           </div>
           <button
             type="submit"
-            className={inputClassList + " sm:self-end w-40"}
+            className={inputClassList + " sm:self-end min-w-[10rem]"}
           >
             Send
           </button>
