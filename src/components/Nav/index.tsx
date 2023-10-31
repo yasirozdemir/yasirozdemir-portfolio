@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import NavLink from "./NavLink";
+import NavLink from "../Reusables/NavLink";
 import "../../styles/nav.css";
 import ToggleButton from "./ToggleButton";
 

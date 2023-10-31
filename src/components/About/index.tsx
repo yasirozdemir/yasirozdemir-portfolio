@@ -1,3 +1,5 @@
+import { H3 } from "../Reusables/H3";
+
 const About = () => {
   const classList = "px-4 py-2 rounded-md shadow-md bg-cyan-700 text-white";
   const skills: string[] = [
@@ -28,8 +30,8 @@ const About = () => {
       <div className="custom-container py-20">
         <div className="max-w-sm mx-auto">
           <img
-            // src="https://res.cloudinary.com/yasirdev/image/upload/v1679173887/portfolio/pfp_zk9j0d.jpg"
-            src="../../../public/assets/favicon.jpeg"
+            src="https://res.cloudinary.com/yasirdev/image/upload/v1679173887/portfolio/pfp_zk9j0d.jpg"
+            // src="../../../public/assets/favicon.jpeg"
             alt=""
             className="w-100 shadow-2xl"
             style={{ borderRadius: "70% 30% 70% 30% / 30% 73% 27% 70%" }}
@@ -37,9 +39,7 @@ const About = () => {
         </div>
         <div className="mt-20 grid grid-rows-1 sm:grid-cols-2 gap-10">
           <div>
-            <h3 className="font-bold text-2xl sm:text-3xl mb-6">
-              Get to know me!
-            </h3>
+            <H3 innerText="Get to know me!" />
             <p className="mb-4 text-lg text-gray-700">
               As a Full-Stack Developer, I enjoy creating{" "}
               <b className="text-cyan-700">innovative</b> and
@@ -74,7 +74,7 @@ const About = () => {
           </div>
           <div>
             <div className="mb-10">
-              <h3 className="font-bold text-2xl sm:text-3xl mb-6">Skills</h3>
+              <H3 innerText="Skills" />
               <ul className="flex flex-wrap gap-3">
                 {skills.map((s, i) => (
                   <li key={i} className={classList}>
@@ -84,7 +84,7 @@ const About = () => {
               </ul>
             </div>
             <div>
-              <h3 className="font-bold text-2xl sm:text-3xl mb-6">Languages</h3>
+              <H3 innerText="Languages" />
               <ul className="flex flex-wrap gap-3">
                 {languages.map((l, i) => (
                   <li key={i} className={classList}>

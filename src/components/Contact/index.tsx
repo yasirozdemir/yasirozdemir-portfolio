@@ -1,11 +1,11 @@
+import { H3 } from "../Reusables/H3";
+
 const Contact = () => {
   const inputClassList = "bg-gray-200 px-4 py-2 rounded-md";
   return (
     <section id="contact" className="py-20">
       <div className="custom-container">
-        <h3 className="font-bold text-2xl sm:text-3xl mb-6 text-center">
-          Contact Me!
-        </h3>
+        <H3 innerText="Contact me!" customClasses="text-center" />
         <form
           action=""
           className="flex flex-col gap-8 sm:w-2/3 mx-auto p-8 rounded-sm shadow-2xl text-lg"
