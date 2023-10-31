@@ -5,16 +5,8 @@ const About = () => {
   const classList = "px-4 py-2 rounded-md shadow-md bg-cyan-700 text-white";
 
   return (
-    <section id="about">
-      <div className="py-20 max-w-xs mx-auto">
-        <img
-          src="https://res.cloudinary.com/yasirdev/image/upload/v1679173887/portfolio/pfp_zk9j0d.jpg"
-          alt="Yasir Ozdemir Photo"
-          className="w-100 shadow-2xl"
-          style={{ borderRadius: "70% 30% 70% 30% / 30% 73% 27% 70%" }}
-        />
-      </div>
-      <div className="custom-container pb-20">
+    <section id="about" className="bg-teal-300 py-10">
+      <div className="custom-container">
         <div className="grid grid-rows-1 sm:grid-cols-2 gap-10">
           <div>
             <H3 innerText="Get to know me!" />

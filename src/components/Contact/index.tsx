@@ -3,7 +3,7 @@ import { H3 } from "../Reusables/H3";
 const Contact = () => {
   const inputClassList = "bg-gray-200 px-4 py-2 rounded-md";
   return (
-    <section id="contact" className="py-20">
+    <section id="contact" className="py-10">
       <div className="custom-container">
         <H3 innerText="Contact me!" customClasses="text-center" />
         <form

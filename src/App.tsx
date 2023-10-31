@@ -8,8 +8,8 @@ import Projects from "./components/Projects";
 function App() {
   return (
     <>
-      <Landing />
       <Nav />
+      <Landing />
       <About />
       <Projects />
       <Contact />

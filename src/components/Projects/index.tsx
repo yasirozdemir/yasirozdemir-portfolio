@@ -4,7 +4,7 @@ import { ProjectCard } from "../Reusables/ProjectCard";
 
 const Projects = () => {
   return (
-    <section id="projects" className="pb-20">
+    <section id="projects" className="py-10 bg-cyan-300">
       <div className="custom-container">
         <div className="flex flex-col">
           <H3 innerText="Projects" customClasses="text-center" />
