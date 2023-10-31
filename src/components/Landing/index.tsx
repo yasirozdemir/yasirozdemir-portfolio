@@ -1,4 +1,5 @@
 import "../../styles/landing.css";
+import { LinkPrimary } from "../Reusables/LinkPrimary";
 
 const Landing = () => {
   return (
@@ -10,13 +11,7 @@ const Landing = () => {
           <br />
           I'm a Full-Stack Developer
         </div>
-        <a
-          href="#about"
-          type="button"
-          className="text-white text-xl font-bold bg-cyan-700 px-8 py-4 rounded-lg shadow-lg mt-10 "
-        >
-          ABOUT ME
-        </a>
+        <LinkPrimary href="#about" innerText="ABOUT ME" customClasses="mt-10" />
       </div>
     </section>
   );

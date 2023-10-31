@@ -40,7 +40,7 @@ const About = () => {
         <div className="mt-20 grid grid-rows-1 sm:grid-cols-2 gap-10">
           <div>
             <H3 innerText="Get to know me!" />
-            <p className="mb-4 text-lg text-gray-700">
+            <p className="mb-4 text-md sm:text-lg text-gray-700">
               As a Full-Stack Developer, I enjoy creating{" "}
               <b className="text-cyan-700">innovative</b> and
               <b className="text-cyan-700"> impactful</b> solutions using
@@ -53,7 +53,7 @@ const About = () => {
               </b>{" "}
               to build scalable and user-friendly web applications.
             </p>
-            <p className="text-lg text-gray-700">
+            <p className="text-md sm:text-lg text-gray-700">
               I also have{" "}
               <b className="text-cyan-700"> diverse international experience</b>
               , having worked at Great Wolf Lodge in the United States, an

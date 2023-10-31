@@ -8,7 +8,7 @@ const Contact = () => {
         <H3 innerText="Contact me!" customClasses="text-center" />
         <form
           action=""
-          className="flex flex-col gap-8 sm:w-2/3 mx-auto p-8 rounded-sm shadow-2xl text-lg"
+          className="flex flex-col gap-8 sm:w-2/3 mx-auto p-8 rounded-sm shadow-2xl text-md sm:text-lg"
         >
           <div className="flex flex-col">
             <label htmlFor="name" className="mb-2 font-bold">
