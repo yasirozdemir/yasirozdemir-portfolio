@@ -2,7 +2,7 @@ import TypewriterComponent from "typewriter-effect";
 
 const Landing = () => {
   return (
-    <section id="landing" className="h-dynamic-screen bg-cyan-50">
+    <section id="landing" className="h-dynamic-screen">
       <div className="flex flex-col justify-center items-center h-full z-10">
         <div className="mb-10 max-w-xs">
           <img
@@ -33,7 +33,7 @@ const Landing = () => {
                 .typeString("Entwickler")
                 .pauseFor(5000)
                 .deleteChars(10)
-                .typeString("Geliştiriçi")
+                .typeString("Geliştirici")
                 .pauseFor(5000)
                 .deleteChars(11)
                 .start();

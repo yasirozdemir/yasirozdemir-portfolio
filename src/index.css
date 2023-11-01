@@ -76,3 +76,11 @@ body {
 footer {
   box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
 }
+
+.bg-cyan-700 {
+  background-color: red !important;
+}
+
+.text-cyan-700 {
+  color: red !important;
+}

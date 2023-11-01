@@ -5,7 +5,7 @@ const About = () => {
   const classList = "px-4 py-2 rounded-md shadow-md bg-cyan-700 text-white";
 
   return (
-    <section id="about" className="bg-teal-300 py-10">
+    <section id="about" className="py-10">
       <div className="custom-container">
         <div className="grid grid-rows-1 sm:grid-cols-2 gap-10">
           <div>

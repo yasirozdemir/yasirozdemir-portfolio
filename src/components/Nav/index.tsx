@@ -26,7 +26,7 @@ const Nav = () => {
 
   return (
     <nav
-      className="fixed top-4 w-[95vw] sm:w-fit flex sm:justify-center sm:items-center z-10 h-[60px] bg-white"
+      className="fixed top-4 w-[95vw] sm:w-fit flex sm:justify-center sm:items-center z-20 h-[60px] bg-white"
       ref={navRef}
     >
       <div className="flex sm:hidden justify-between items-center px-4 py-4 w-full">
@@ -37,7 +37,7 @@ const Nav = () => {
       </div>
       <ul
         id="nav-menu"
-        className={`flex flex-col sm:flex-row justify-center items-center sm:text-xl ${
+        className={`flex flex-col sm:flex-row justify-center items-center sm:text-xl z-10 ${
           isNavVisible ? "show" : ""
         }`}
       >
