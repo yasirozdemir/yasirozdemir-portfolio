@@ -6,7 +6,7 @@ interface INavLinkProps {
 const NavLink = ({ title, toggleNav }: INavLinkProps) => {
   return (
     <li className="nav_link uppercase font-bold px-12 py-4 tracking-wider">
-      <a href={"#" + title} onClick={toggleNav}>
+      <a href={"#" + title} onClick={toggleNav} className="hover:text-cyan-700">
         {title}
       </a>
     </li>

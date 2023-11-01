@@ -6,20 +6,21 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: calc(60px + 1rem);
 }
 
 body {
   font-family: "Kanit", sans-serif;
 }
 
-/* Fallback for the browsers that does'nt support dvh */
+/* Fallback for the browsers that does'nt support svh */
 .h-dynamic-screen {
   height: 100vh;
 }
 
-@media (min-height: 100dvh) {
+@media (min-height: 100svh) {
   .h-dynamic-screen {
-    height: 100dvh;
+    height: 100svh;
   }
 }
 
