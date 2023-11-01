@@ -3,7 +3,12 @@ nav {
   border-radius: 0.5rem;
   left: 50%;
   transform: translateX(-50%);
+  /* transition: transform 500ms ease-in-out;  */
 }
+
+/* nav.on_scroll_up {
+  transform: translateX(-50%) translateY(calc(-60px - 100%));
+} */
 
 .nav_link:nth-of-type(1) {
   border-top-left-radius: 0.5rem;
@@ -56,6 +61,11 @@ nav {
   #nav-menu .nav_link + .nav_link a {
     border-block-start: 1px solid #2e2e2e7c;
   }
+
+  /* nav.on_scroll_up #nav-menu {
+    visibility: hidden;
+    opacity: 0;
+  } */
 }
 
 @media (min-width: 640px) {

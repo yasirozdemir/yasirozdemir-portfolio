@@ -24,6 +24,38 @@ const Nav = () => {
     };
   }, []);
 
+  // Use the lines between line 31 and 56 to add scroll nav up funcitonality
+  // copy initialNavCL and paste it to nav element as className
+  // also uncomment line 6, line 9-12, and line 65-68 in nav.css
+
+  // const initialNavCL =
+  //   "fixed top-4 w-[95vw] sm:w-fit flex sm:justify-center sm:items-center z-20 h-[60px] bg-white";
+  // const [navClassList, setNavClassList] = useState(initialNavCL);
+
+  // const [scroll, setScroll] = useState({
+  //   y: 0,
+  //   prevY: 0,
+  // });
+
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     setScroll((prevState) => {
+  //       return {
+  //         y: window.scrollY,
+  //         prevY: prevState.y,
+  //       };
+  //     });
+  //   };
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
+
+  // useEffect(() => {
+  //   if (scroll.prevY > scroll.y) setNavClassList(initialNavCL);
+  //   else if (scroll.prevY === scroll.y) return;
+  //   else setNavClassList(initialNavCL + " on_scroll_up");
+  // }, [scroll]);
+
   return (
     <nav
       className="fixed top-4 w-[95vw] sm:w-fit flex sm:justify-center sm:items-center z-20 h-[60px] bg-white"
