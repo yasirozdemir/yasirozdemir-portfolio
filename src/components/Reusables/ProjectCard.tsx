@@ -14,7 +14,7 @@ export const ProjectCard = ({
   img_src,
 }: IProjectCardProps) => {
   return (
-    <article className="project_card rounded-sm shadow-2xl grid grid-rows-1 md:grid-cols-2 gap-4 md:gap-10 overflow-hidden">
+    <article className="project_card rounded-sm shadow-2xl grid grid-rows-1 md:grid-cols-2 sm:gap-4 md:gap-10 overflow-hidden">
       <div className="my-auto overflow-hidden rounded-sm">
         <img src={img_src} alt={title.toLowerCase() + " web view"} />
       </div>

@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         cerulean: "#457B9D",
+        honeydew: "#F1FAEE",
       },
     },
   },

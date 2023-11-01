@@ -11,9 +11,9 @@ const ToggleButton = ({ isNavVisible, toggleNav }: IToggleButtonProps) => {
       className={isNavVisible ? "toggle" : ""}
       onClick={toggleNav}
     >
-      <span />
-      <span />
-      <span />
+      <span className="bg-honeydew" />
+      <span className="bg-honeydew" />
+      <span className="bg-honeydew" />
     </button>
   );
 };
