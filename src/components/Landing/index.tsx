@@ -4,7 +4,7 @@ const Landing = () => {
   return (
     <section id="landing" className="h-dynamic-screen">
       <div className="flex flex-col justify-center items-center h-full z-10">
-        <div className="mb-10 max-w-xs">
+        <div className="mb-10 max-w-[15rem] sm:max-w-sm">
           <img
             src="https://res.cloudinary.com/yasirdev/image/upload/v1679173887/portfolio/pfp_zk9j0d.jpg"
             alt="Yasir Ozdemir Photo"

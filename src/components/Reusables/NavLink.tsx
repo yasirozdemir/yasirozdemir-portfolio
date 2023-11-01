@@ -9,7 +9,7 @@ const NavLink = ({ title, toggleNav }: INavLinkProps) => {
       <a
         href={"#" + title}
         onClick={toggleNav}
-        className="hover:text-cyan-700 sm:px-8 sm:py-4"
+        className="hover:text-[#1D3557] sm:px-8 sm:py-4"
       >
         {title}
       </a>

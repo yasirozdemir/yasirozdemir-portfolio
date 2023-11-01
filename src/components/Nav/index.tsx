@@ -58,12 +58,12 @@ const Nav = () => {
 
   return (
     <nav
-      className="fixed top-4 w-[95vw] sm:w-fit flex sm:justify-center sm:items-center z-20 h-[60px] bg-white"
+      className="fixed top-4 w-[95vw] sm:w-fit flex sm:justify-center sm:items-center z-20 h-[60px]"
       ref={navRef}
     >
       <div className="flex sm:hidden justify-between items-center px-4 py-4 w-full">
-        <a href="#landing" className="tracking-wider text-2xl font-bold">
-          MYO
+        <a href="#landing" className="text-xl font-bold">
+          Yasir O.
         </a>
         <ToggleButton isNavVisible={isNavVisible} toggleNav={toggleNav} />
       </div>

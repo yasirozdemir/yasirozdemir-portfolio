@@ -11,6 +11,7 @@ html {
 
 body {
   font-family: "Kanit", sans-serif;
+  background-color: #f5f5f5;
 }
 
 /* Fallback for the browsers that does'nt support svh */
@@ -78,9 +79,9 @@ footer {
 }
 
 .bg-cyan-700 {
-  background-color: red !important;
+  background-color: #457b9d !important;
 }
 
 .text-cyan-700 {
-  color: red !important;
+  color: #457b9d !important;
 }
