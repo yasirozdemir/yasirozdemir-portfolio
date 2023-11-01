@@ -12,6 +12,7 @@ html {
 body {
   font-family: "Kanit", sans-serif;
   background-color: #f5f5f5;
+  color: #1d3557;
 }
 
 /* Fallback for the browsers that does'nt support svh */
@@ -63,6 +64,7 @@ body {
 
 #contact {
   background-image: url(../../public/assets/pattern.png);
+  box-shadow: 0px 0px 40px inset rgb(29, 53, 87, 0.5);
 }
 
 #contact form,
@@ -72,8 +74,4 @@ body {
 
 .projects-container article + article {
   margin-block-start: 3rem;
-}
-
-footer {
-  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
 }

@@ -4,6 +4,8 @@ import Footer from "./components/Footer";
 import Landing from "./components/Landing";
 import Nav from "./components/Nav";
 import Projects from "./components/Projects";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
+      <ToastContainer />
     </>
   );
 }

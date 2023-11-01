@@ -1,3 +1,5 @@
+import { ToastOptions } from "react-toastify";
+
 export const skills: string[] = [
   "HTML",
   "CSS",
@@ -61,3 +63,14 @@ export const projects: {
       "https://res.cloudinary.com/yasirdev/image/upload/v1684745973/portfolio/projects/epicode_rio1gr.jpg",
   },
 ];
+
+export const alertOptions: ToastOptions = {
+  position: "bottom-center",
+  autoClose: 3000,
+  hideProgressBar: false,
+  closeOnClick: true,
+  pauseOnHover: true,
+  draggable: true,
+  progress: undefined,
+  theme: "dark",
+};
