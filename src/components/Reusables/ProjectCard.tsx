@@ -19,12 +19,12 @@ export const ProjectCard = ({
         <img src={img_src} alt={title.toLowerCase() + " web view"} />
       </div>
       <div className="flex flex-col justify-center items-center md:items-start py-4 lg:py-0 px-4 sm:pr-4">
-        <H3 innerText={title} customClasses="text-cyan-700" />
+        <H3 innerText={title} customClasses="text-cerulean" />
         <p className="text-md sm:text-lg text-gray-700 mb-4">{summary}</p>
         <a
           href={github_link}
           target="_blank"
-          className="text-cyan-700 font-bold inline-block mx-auto md:mx-0 md:self-start"
+          className="text-cerulean font-bold inline-block mx-auto md:mx-0 md:self-start"
           style={{ borderBlockEnd: "2px solid", lineHeight: "1rem" }}
         >
           View on Github

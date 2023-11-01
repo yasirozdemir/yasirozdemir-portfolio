@@ -6,7 +6,7 @@ import Medium from "../../../public/assets/svgs/medium.svg";
 
 const Footer = () => {
   return (
-    <footer className="bg-cyan-700 text-[#F1FAEE]">
+    <footer className="bg-cerulean text-[#F1FAEE]">
       <ul className="flex flex-wrap py-4 justify-center items-center gap-4">
         <li>
           <a href="https://www.linkedin.com/in/yasirozdemir" target="_blank">

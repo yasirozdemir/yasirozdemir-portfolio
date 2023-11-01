@@ -13,7 +13,7 @@ const Landing = () => {
           />
         </div>
         <div className="text-center">
-          <h1 className="text-5xl md:text-6xl font-semibold text-cyan-700">
+          <h1 className="text-5xl md:text-6xl font-semibold text-cerulean">
             Yasir Ozdemir
           </h1>
           <TypewriterComponent

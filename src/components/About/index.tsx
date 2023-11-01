@@ -2,7 +2,7 @@ import { languages, skills } from "../../data";
 import { H3 } from "../Reusables/H3";
 
 const About = () => {
-  const classList = "px-4 py-2 rounded-md shadow-md bg-cyan-700 text-white";
+  const classList = "px-4 py-2 rounded-md shadow-md bg-cerulean text-white";
 
   return (
     <section id="about" className="py-10">
@@ -12,12 +12,12 @@ const About = () => {
             <H3 innerText="Get to know me!" />
             <p className="mb-4 text-md sm:text-lg text-gray-700">
               As a Full-Stack Developer, I enjoy creating{" "}
-              <b className="text-cyan-700">innovative</b> and
-              <b className="text-cyan-700"> impactful</b> solutions using
+              <b className="text-cerulean">innovative</b> and
+              <b className="text-cerulean"> impactful</b> solutions using
               cutting-edge technologies. I have recently graduated from EPICODE,
               a rigorous and intensive full-stack developer boot camp that
               taught me how to use
-              <b className="text-cyan-700">
+              <b className="text-cerulean">
                 {" "}
                 TypeScript, React, Node.js, Express, and MongoDB
               </b>{" "}
@@ -25,18 +25,18 @@ const About = () => {
             </p>
             <p className="text-md sm:text-lg text-gray-700">
               I also have{" "}
-              <b className="text-cyan-700"> diverse international experience</b>
+              <b className="text-cerulean"> diverse international experience</b>
               , having worked at Great Wolf Lodge in the United States, an
               Erasmus+ project participation in France, and online digital
               mentorship at Rome Business School. Through these opportunities, I
               developed my
-              <b className="text-cyan-700">
+              <b className="text-cerulean">
                 {" "}
                 teamwork, communication, and intercultural skills,
               </b>{" "}
               while learning from colleagues with different backgrounds and
               perspectives.{" "}
-              <b className="text-cyan-700">I am looking for a job</b> as a
+              <b className="text-cerulean">I am looking for a job</b> as a
               full-stack developer in a dynamic and innovative company where I
               can keep enhancing my skills, contribute to exciting projects, and
               make a difference.

@@ -3,7 +3,6 @@ nav {
   border-radius: 0.5rem;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #457b9d;
   color: #f1faee;
   /* transition: transform 500ms ease-in-out;  */
 }

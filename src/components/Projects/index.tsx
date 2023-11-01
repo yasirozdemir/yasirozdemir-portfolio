@@ -13,7 +13,7 @@ const Projects = () => {
             <a
               href="https://github.com/yasirozdemir"
               target="_blank"
-              className="text-cyan-700 font-bold inline-block"
+              className="text-cerulean font-bold inline-block"
               style={{ borderBlockEnd: "2px solid", lineHeight: "1rem" }}
             >
               Github
