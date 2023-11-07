@@ -15,6 +15,24 @@ body {
   color: #1d3557;
 }
 
+img {
+  pointer-events: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+li,
+label,
+img {
+  user-select: none;
+}
+
 /* Fallback for the browsers that does'nt support svh */
 .h-dynamic-screen {
   height: 100vh;

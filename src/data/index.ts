@@ -1,27 +1,38 @@
 import { ToastOptions } from "react-toastify";
 
-export const skills: string[] = [
-  "HTML",
-  "CSS",
-  "Javascript",
-  "Typescript",
-  "React",
-  "Redux",
-  "Bootstrap",
-  "Tailwind",
-  "Node.js",
-  "Express",
-  "MongoDB",
-  "PostgreSQL",
-  "Vite.js",
-  "Postman API & Docs",
-  "OpenAI GPT 3.5 Turbo API",
+export const hardSkills: { text: string; bg: string }[] = [
+  { text: "HTML", bg: "#E54B20" },
+  { text: "CSS", bg: "#0B73B7" },
+  { text: "Javascript", bg: "#D0B237" },
+  { text: "Typescript", bg: "#2E78C7" },
+  { text: "React", bg: "#61D9FB" },
+  { text: "Redux", bg: "#764ABC" },
+  { text: "Bootstrap", bg: "#5B4282" },
+  { text: "Tailwind", bg: "#37BCF8" },
+  { text: "Node.js", bg: "#61B347" },
+  { text: "Express.js", bg: "#323232" },
+  { text: "MongoDB", bg: "#55AD48" },
+  { text: "PostgreSQL", bg: "#3A6C94" },
+  { text: "Vite.js", bg: "#FFCC31" },
+  { text: "Postman API & Docs", bg: "#FF7040" },
+  { text: "OpenAI GPT 3.5 Turbo API", bg: "#20A683" },
 ];
 
-export const languages: { lan: string; lev: string }[] = [
-  { lan: "Turkish", lev: "Native" },
-  { lan: "English", lev: "Professional" },
-  { lan: "German", lev: "Beginner" },
+export const softSkills = [
+  "Teamwork",
+  "Networking",
+  "Adaptability",
+  "Communication",
+  "Time Management",
+  "Problem-Solving",
+  "Cultural Awareness",
+  "Presentation Skills",
+];
+
+export const languages: { lan: string; level: string }[] = [
+  { lan: "Turkish", level: "Native" },
+  { lan: "English", level: "Professional" },
+  { lan: "German", level: "Beginner" },
 ];
 
 export const projects: {

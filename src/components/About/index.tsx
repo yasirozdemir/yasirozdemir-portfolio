@@ -1,8 +1,9 @@
-import { languages, skills } from "../../data";
+import { languages, hardSkills, softSkills } from "../../data";
 import { H3 } from "../Reusables/H3";
 
 const About = () => {
-  const classList = "px-4 py-2 rounded-md shadow-md bg-cerulean text-white";
+  const classList =
+    "px-4 py-2 rounded-md text-white shadow-[0_0_8px_0_rgba(0,0,0,0.25)_inset]";
 
   return (
     <section id="about" className="py-10">
@@ -19,7 +20,7 @@ const About = () => {
               taught me how to use
               <b className="text-cerulean">
                 {" "}
-                TypeScript, React, Node.js, Express, and MongoDB
+                TypeScript, React, Node.js, Express.js, and MongoDB
               </b>{" "}
               to build scalable and user-friendly web applications.
             </p>
@@ -44,11 +45,27 @@ const About = () => {
           </div>
           <div>
             <div className="mb-10">
-              <H3 innerText="Skills" />
+              <H3 innerText="Hard Skills" />
               <ul className="flex flex-wrap gap-3">
-                {skills.map((s, i) => (
-                  <li key={i} className={classList}>
-                    {s}
+                {hardSkills.map((skill, i) => (
+                  <li
+                    key={i}
+                    className={classList}
+                    style={{
+                      backgroundColor: skill.bg,
+                    }}
+                  >
+                    {skill.text}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="mb-10">
+              <H3 innerText="Soft Skills" />
+              <ul className="flex flex-wrap gap-3">
+                {softSkills.map((skill, i) => (
+                  <li key={i} className={classList + " bg-cerulean"}>
+                    {skill}
                   </li>
                 ))}
               </ul>
@@ -57,8 +74,8 @@ const About = () => {
               <H3 innerText="Languages" />
               <ul className="flex flex-wrap gap-3">
                 {languages.map((l, i) => (
-                  <li key={i} className={classList}>
-                    {l.lan}: <i>{l.lev}</i>
+                  <li key={i} className={classList + " bg-cerulean"}>
+                    {l.lan}: <i>{l.level}</i>
                   </li>
                 ))}
               </ul>
