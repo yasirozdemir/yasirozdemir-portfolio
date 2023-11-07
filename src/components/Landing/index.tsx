@@ -2,10 +2,8 @@ import TypewriterComponent from "typewriter-effect";
 import { CV_URLs } from "../../data";
 
 const Landing = () => {
-  const landingLinkStyle = {
-    borderBlockEnd: "solid 3px",
-  };
-
+  const landingLinkClassNames =
+    "border-b-[3px] border-gray-700 transition-all duration-300 hover:text-cerulean hover:border-cerulean";
   return (
     <section id="landing" className="h-dynamic-screen relative">
       <div className="flex flex-col justify-center items-center h-full z-10">
@@ -46,13 +44,17 @@ const Landing = () => {
           />
         </div>
         <div className="absolute bottom-4 md:h-[60px] flex flex-col md:flex-row gap-2 md:gap-6 mt-10 text-lg md:text-xl font-extrabold items-center justify-center">
-          <a href="#about" style={landingLinkStyle}>
+          <a href="#about" className={landingLinkClassNames}>
             Get to know me
           </a>
           <span className="hidden md:inline-block select-none text-gray-500">
             or
           </span>
-          <a href={CV_URLs.EN} target="_blank" style={landingLinkStyle}>
+          <a
+            href={CV_URLs.EN}
+            target="_blank"
+            className={landingLinkClassNames}
+          >
             View my Resume
           </a>
         </div>

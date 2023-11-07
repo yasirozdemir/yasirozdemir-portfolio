@@ -47,7 +47,7 @@ const Contact = () => {
           className="flex flex-col gap-8 sm:w-2/3 mx-auto p-8 rounded-sm shadow-2xl text-md sm:text-lg z-10"
         >
           <div className="flex flex-col">
-            <label htmlFor="name" className="mb-2 font-bold">
+            <label htmlFor="user_name" className="mb-2 font-bold">
               Name
             </label>
             <input
@@ -59,7 +59,7 @@ const Contact = () => {
             />
           </div>
           <div className="flex flex-col">
-            <label htmlFor="email" className="mb-2 font-bold">
+            <label htmlFor="user_email" className="mb-2 font-bold">
               Email
             </label>
             <input
