@@ -74,3 +74,11 @@ export const alertOptions: ToastOptions = {
   progress: undefined,
   theme: "dark",
 };
+
+export const footerLinkData: { url: string }[] = [
+  { url: "https://www.linkedin.com/in/yasirozdemir" },
+  { url: "https://www.github.com/yasirozdemir" },
+  { url: "https://www.instagram.com/yasirunofficial_" },
+  { url: "https://www.youtube.com/@MuhammedYasirOzdemir" },
+  { url: "https://www.medium.com/@muhammedyasirozdemir" },
+];
