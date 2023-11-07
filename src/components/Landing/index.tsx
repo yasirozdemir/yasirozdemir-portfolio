@@ -11,7 +11,7 @@ const Landing = () => {
       <div className="flex flex-col justify-center items-center h-full z-10">
         <div className="mb-10 max-w-[15rem] sm:max-w-sm">
           <img
-            src="../../../public/assets/yo.jpeg"
+            src="/assets/yo.jpeg"
             alt="Yasir Ozdemir Photo"
             className="w-100 shadow-2xl"
             style={{ borderRadius: "70% 30% 70% 30% / 30% 73% 27% 70%" }}

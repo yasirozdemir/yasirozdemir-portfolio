@@ -84,5 +84,5 @@ export const footerLinkData: { url: string }[] = [
 ];
 
 export const CV_URLs = {
-  EN: "../../public/assets/CVs/M_Yasir_Ozdemir_CV_EN.pdf",
+  EN: "/assets/CVs/M_Yasir_Ozdemir_CV_EN.pdf",
 };
