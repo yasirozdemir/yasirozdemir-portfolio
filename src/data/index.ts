@@ -82,3 +82,7 @@ export const footerLinkData: { url: string }[] = [
   { url: "https://www.youtube.com/@MuhammedYasirOzdemir" },
   { url: "https://www.medium.com/@muhammedyasirozdemir" },
 ];
+
+export const CV_URLs = {
+  EN: "../../public/assets/CVs/M_Yasir_Ozdemir_CV_EN.pdf",
+};

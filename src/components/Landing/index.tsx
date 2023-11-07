@@ -1,12 +1,17 @@
 import TypewriterComponent from "typewriter-effect";
+import { CV_URLs } from "../../data";
 
 const Landing = () => {
+  const landingLinkStyle = {
+    borderBlockEnd: "solid 3px",
+  };
+
   return (
-    <section id="landing" className="h-dynamic-screen">
+    <section id="landing" className="h-dynamic-screen relative">
       <div className="flex flex-col justify-center items-center h-full z-10">
         <div className="mb-10 max-w-[15rem] sm:max-w-sm">
           <img
-            src="https://res.cloudinary.com/yasirdev/image/upload/v1679173887/portfolio/pfp_zk9j0d.jpg"
+            src="../../../public/assets/yo.jpeg"
             alt="Yasir Ozdemir Photo"
             className="w-100 shadow-2xl"
             style={{ borderRadius: "70% 30% 70% 30% / 30% 73% 27% 70%" }}
@@ -39,6 +44,17 @@ const Landing = () => {
                 .start();
             }}
           />
+        </div>
+        <div className="absolute bottom-4 md:h-[60px] flex flex-col md:flex-row gap-2 md:gap-6 mt-10 text-lg md:text-xl font-extrabold items-center justify-center">
+          <a href="#about" style={landingLinkStyle}>
+            Get to know me
+          </a>
+          <span className="hidden md:inline-block select-none text-gray-500">
+            or
+          </span>
+          <a href={CV_URLs.EN} target="_blank" style={landingLinkStyle}>
+            View my Resume
+          </a>
         </div>
       </div>
     </section>
