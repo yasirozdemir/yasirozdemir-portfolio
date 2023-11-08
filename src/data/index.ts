@@ -25,6 +25,7 @@ export const hardSkills: ISkill[] = [
 
 export const softSkills = [
   "Teamwork",
+  "Leadership",
   "Networking",
   "Adaptability",
   "Communication",

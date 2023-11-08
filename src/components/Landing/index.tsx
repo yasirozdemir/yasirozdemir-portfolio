@@ -3,7 +3,7 @@ import { CV_URLs } from "../../data";
 
 const Landing = () => {
   const landingLinkClassNames =
-    "border-b-[3px] border-gray-700 transition-all duration-300 hover:text-mikado_yellow hover:border-oxford_blue";
+    "border-b-[3px] text-white border-white transition-all duration-300 hover:text-mikado_yellow hover:border-mikado_yellow";
   return (
     <section id="landing" className="h-dynamic-screen relative">
       <div className="flex flex-col justify-center items-center h-full z-10">
@@ -49,9 +49,7 @@ const Landing = () => {
           <a href="#about" className={landingLinkClassNames}>
             Get to know me
           </a>
-          <span className="hidden md:inline-block select-none text-gray-500">
-            or
-          </span>
+          <span className="hidden md:inline-block text-gray-500">or</span>
           <a
             href={CV_URLs.EN}
             target="_blank"

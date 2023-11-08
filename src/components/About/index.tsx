@@ -3,7 +3,7 @@ import { H3 } from "../Reusables/H3";
 
 const About = () => {
   const classList =
-    "px-4 py-2 rounded-md text-white shadow-[0_0_8px_0_rgba(0,0,0,0.25)_inset]";
+    "px-4 py-2 rounded-md text-[#CFCFCF] shadow-[0_0_15px_0_rgba(0,0,0,0.5)_inset]";
 
   return (
     <section id="about" className="py-10">
@@ -13,58 +13,60 @@ const About = () => {
             <H3 innerText="Get to know me!" />
             <p className="mb-4 text-md sm:text-lg ">
               As a Full-Stack Developer, I enjoy creating{" "}
-              <b className="text-mikado_yellow">innovative</b> and
-              <b className="text-mikado_yellow"> impactful</b> solutions using
-              cutting-edge technologies. I have recently graduated from EPICODE,
-              a rigorous and intensive full-stack developer boot camp that
-              taught me how to use
-              <b className="text-mikado_yellow">
+              <span className="text-mikado_yellow">innovative</span> and
+              <span className="text-mikado_yellow"> impactful</span> solutions
+              using cutting-edge technologies. I have recently graduated from
+              EPICODE, a rigorous and intensive full-stack developer boot camp
+              that taught me how to use
+              <span className="text-mikado_yellow">
                 {" "}
                 TypeScript, React, Node.js, Express.js, and MongoDB
-              </b>{" "}
+              </span>{" "}
               to build scalable and user-friendly web applications.
             </p>
             <p className="mb-4 text-md sm:text-lg ">
               I also have{" "}
-              <b className="text-mikado_yellow">
+              <span className="text-mikado_yellow">
                 {" "}
                 diverse international experience
-              </b>
+              </span>
               , having worked at Great Wolf Lodge in the United States, an
               Erasmus+ project participation in France, and online digital
               mentorship at Rome Business School. Through these opportunities, I
               developed my
-              <b className="text-mikado_yellow">
+              <span className="text-mikado_yellow">
                 {" "}
                 teamwork, communication, and intercultural skills
-              </b>{" "}
+              </span>{" "}
               while learning from colleagues with different backgrounds and
               perspectives.{" "}
-              <b className="text-mikado_yellow">I am looking for a job</b> as a
-              full-stack developer in a dynamic and innovative company where I
-              can keep enhancing my skills, contribute to exciting projects, and
-              make a difference.
+              <span className="text-mikado_yellow">
+                I am looking for a job
+              </span>{" "}
+              as a full-stack developer in a dynamic and innovative company
+              where I can keep enhancing my skills, contribute to exciting
+              projects, and make a difference.
             </p>
             <p className="text-md sm:text-lg ">
               In addition to my professional identity, I have a different list
               of hobbies. The first one is{" "}
-              <b className="text-mikado_yellow">aviation</b>. I have always been
-              an aviation geek since I was a kid. I like to spend time on
-              flightradar24. Second,{" "}
-              <b className="text-mikado_yellow">I love to take photos</b> with
-              my phone while I travel around the globe. You can check my{" "}
+              <span className="text-mikado_yellow">aviation</span>. I have
+              always been an aviation geek since I was a kid. I like to spend
+              time on flightradar24. Second,{" "}
+              <span className="text-mikado_yellow">I love to take photos</span>{" "}
+              with my phone while I travel around the globe. You can check my{" "}
               <a
                 href="https://www.instagram.com/yasirunofficial_"
                 target="_blank"
-                className="text-mikado_yellow font-bold inline-block border-b-[2px] border-oxford_blue leading-6"
+                className="text-mikado_yellow inline-block border-b-[2px] border-mikado_yellow leading-6"
               >
                 Instagram
               </a>{" "}
               to see the photos taken by me. Adding to these two, I like{" "}
-              <b className="text-mikado_yellow">
+              <span className="text-mikado_yellow">
                 riding a bike, hiking, working out at the gym, reading books,
                 watching series, and listening to music and podcasts.
-              </b>
+              </span>
             </p>
           </div>
           <div>
@@ -74,10 +76,10 @@ const About = () => {
                 {hardSkills.map((skill, i) => (
                   <li
                     key={i}
-                    className={classList}
-                    style={{
-                      backgroundColor: skill.bg,
-                    }}
+                    className={classList + " bg-oxford_blue"}
+                    // style={{
+                    //   backgroundColor: skill.bg,
+                    // }}
                   >
                     {skill.text}
                   </li>
