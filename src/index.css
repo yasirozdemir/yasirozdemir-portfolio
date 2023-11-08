@@ -48,7 +48,7 @@ img {
   font-family: "DM Serif Display", serif;
 }
 
-#contact form,
+#contact .container > div,
 #projects .project_card {
   background-color: #fff;
 }
