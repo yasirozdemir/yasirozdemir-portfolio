@@ -4,7 +4,9 @@ import emailjs from "@emailjs/browser";
 import { alertOptions } from "../../data";
 
 const Contact = () => {
-  const inputClassList = "bg-gray-200 px-4 py-2 rounded-md";
+  const inputClassList =
+    "bg-french_gray px-4 py-2 rounded-md text-delft_blue placeholder:text-delft_blue placeholder:opacity-60";
+  const labelClassList = "text-white font-bold mb-2";
   const { VITE_SERV_ID, VITE_TEMP_ID, VITE_USER_KEY } = import.meta.env;
 
   const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -41,13 +43,13 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20">
       <div className="container">
+        <H3 innerText="Contact me!" customClasses="text-center text-white" />
         <div className="grid grid-rows-1 sm:grid-cols-2 gap-10">
           <div className="flex flex-col justify-center items-center">
-            <H3 innerText="Contact me!" customClasses="text-center" />
             <img
               src="https://res.cloudinary.com/yasirdev/image/upload/v1680865177/portfolio/Contact-us_imkk4f.png"
               alt="Illustration from freesvgillustration.com"
-              className="max max-w-full max-h-[400px] -mt-6"
+              className="max max-w-full max-h-[400px]"
             />
           </div>
           <form
@@ -55,7 +57,7 @@ const Contact = () => {
             className="flex flex-col gap-8 rounded-sm text-md sm:text-lg"
           >
             <div className="flex flex-col">
-              <label htmlFor="user_name" className="mb-2 font-bold">
+              <label htmlFor="user_name" className={labelClassList}>
                 Name
               </label>
               <input
@@ -67,7 +69,7 @@ const Contact = () => {
               />
             </div>
             <div className="flex flex-col">
-              <label htmlFor="user_email" className="mb-2 font-bold">
+              <label htmlFor="user_email" className={labelClassList}>
                 Email
               </label>
               <input
@@ -79,7 +81,7 @@ const Contact = () => {
               />
             </div>
             <div className="flex flex-col">
-              <label htmlFor="message" className="mb-2 font-bold">
+              <label htmlFor="message" className={labelClassList}>
                 Message
               </label>
               <textarea
@@ -97,53 +99,6 @@ const Contact = () => {
               Send
             </button>
           </form>
-          {/* <form
-            onSubmit={sendEmail}
-            className="flex flex-col gap-8 sm:w-2/3 mx-auto p-8 rounded-sm shadow-2xl text-md sm:text-lg z-10"
-          >
-            <div className="flex flex-col">
-              <label htmlFor="user_name" className="mb-2 font-bold">
-                Name
-              </label>
-              <input
-                type="text"
-                name="user_name"
-                id="user_name"
-                placeholder="Your Name"
-                className={inputClassList}
-              />
-            </div>
-            <div className="flex flex-col">
-              <label htmlFor="user_email" className="mb-2 font-bold">
-                Email
-              </label>
-              <input
-                type="email"
-                name="user_email"
-                id="user_email"
-                placeholder="Your Email"
-                className={inputClassList}
-              />
-            </div>
-            <div className="flex flex-col">
-              <label htmlFor="message" className="mb-2 font-bold">
-                Message
-              </label>
-              <textarea
-                name="message"
-                id="message"
-                rows={8}
-                placeholder="Your Message"
-                className={inputClassList}
-              />
-            </div>
-            <button
-              type="submit"
-              className={inputClassList + " sm:self-end min-w-[10rem]"}
-            >
-              Send
-            </button>
-          </form> */}
         </div>
       </div>
     </section>

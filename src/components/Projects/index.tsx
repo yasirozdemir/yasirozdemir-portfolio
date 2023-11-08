@@ -7,7 +7,7 @@ const Projects = () => {
     <section id="projects" className="py-10">
       <div className="container">
         <div className="flex flex-col">
-          <H3 innerText="Projects" customClasses="text-center" />
+          <H3 innerText="Projects" customClasses="text-center text-white" />
           <p className="text-md sm:text-lg  text-center mb-4">
             You can visit my{" "}
             <a

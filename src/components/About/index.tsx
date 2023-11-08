@@ -10,7 +10,7 @@ const About = () => {
       <div className="container">
         <div className="grid grid-rows-1 sm:grid-cols-2 gap-10">
           <div>
-            <H3 innerText="Get to know me!" />
+            <H3 innerText="Get to know me!" customClasses="text-white" />
             <p className="mb-4 text-md sm:text-lg ">
               As a Full-Stack Developer, I enjoy creating{" "}
               <span className="text-mikado_yellow">innovative</span> and
@@ -71,7 +71,7 @@ const About = () => {
           </div>
           <div>
             <div className="mb-10">
-              <H3 innerText="Hard Skills" />
+              <H3 innerText="Hard Skills" customClasses="text-white" />
               <ul className="flex flex-wrap gap-3">
                 {hardSkills.map((skill, i) => (
                   <li
@@ -97,7 +97,7 @@ const About = () => {
               </ul>
             </div>
             <div>
-              <H3 innerText="Languages" />
+              <H3 innerText="Languages" customClasses="text-white" />
               <ul className="flex flex-wrap gap-3">
                 {languages.map((l, i) => (
                   <li key={i} className={classList + " bg-oxford_blue"}>

@@ -4,7 +4,6 @@ export default {
   theme: {
     extend: {
       colors: {
-        columbia_blue: "#D6E8FE",
         oxford_blue: "#09172D",
         delft_blue: "#182E4E",
         french_gray: "#B8BCCC",
