@@ -3,7 +3,7 @@ import FooterLink from "../Reusables/FooterLink";
 
 const Footer = () => {
   return (
-    <footer className="bg-cerulean text-honeydew">
+    <footer className="bg-onyx text-honeydew">
       <ul className="flex flex-wrap py-4 justify-center items-center gap-4">
         {footerLinkData.map((el, i) => (
           <FooterLink key={i} url={el.url} />

@@ -58,7 +58,7 @@ const Nav = () => {
 
   return (
     <nav
-      className="fixed top-0 left-[50%] translate-x-[-50%] w-[95vw] sm:w-fit flex sm:justify-center sm:items-center z-20 h-[60px] rounded-b-lg shadow-[0_5px_50px_rgb(0,0,0,0.35)] bg-cerulean text-honeydew"
+      className="fixed top-0 left-[50%] translate-x-[-50%] w-[95vw] sm:w-fit flex sm:justify-center sm:items-center z-20 h-[60px] rounded-b-lg shadow-[0_5px_50px_rgb(0,0,0,0.35)] bg-onyx text-honeydew"
       ref={navRef}
     >
       <div className="flex sm:hidden justify-between items-center px-4 py-4 w-full">
