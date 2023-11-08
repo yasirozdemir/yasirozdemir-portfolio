@@ -80,11 +80,6 @@ img {
   font-family: "DM Serif Display", serif;
 }
 
-#contact {
-  background-image: url(/assets/pattern.png);
-  box-shadow: 0px 0px 40px inset rgb(29, 53, 87, 0.5);
-}
-
 #contact form,
 #projects .project_card {
   background-color: #fff;

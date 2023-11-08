@@ -2,6 +2,7 @@ import { toast } from "react-toastify";
 import { H3 } from "../Reusables/H3";
 import emailjs from "@emailjs/browser";
 import { alertOptions } from "../../data";
+import bgSvg from "/assets/svgs/pattern.svg";
 
 const Contact = () => {
   const inputClassList = "bg-gray-200 px-4 py-2 rounded-md";
@@ -39,7 +40,11 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-10">
+    <section
+      id="contact"
+      className="py-10 shadow-[0_0_40px_rgb(29,53,87,0.5)_inset]"
+      style={{ background: `url(${bgSvg})` }}
+    >
       <div className="custom-container">
         <H3 innerText="Contact me!" customClasses="text-center" />
         <form

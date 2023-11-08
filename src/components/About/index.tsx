@@ -51,7 +51,7 @@ const About = () => {
               <b className="text-cerulean">I love to take photos</b> with my
               phone while I travel around the globe. You can check my{" "}
               <a
-                href="https://github.com/yasirozdemir"
+                href="https://www.instagram.com/yasirunofficial_"
                 target="_blank"
                 className="text-cerulean font-bold inline-block border-b-[2px] border-cerulean leading-6"
               >
