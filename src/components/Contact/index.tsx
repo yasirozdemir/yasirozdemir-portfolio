@@ -45,7 +45,7 @@ const Contact = () => {
       className="py-10 shadow-[0_0_40px_rgb(29,53,87,0.5)_inset]"
       style={{ background: `url(${bgSvg})` }}
     >
-      <div className="custom-container">
+      <div className="container">
         <H3 innerText="Contact me!" customClasses="text-center" />
         <form
           onSubmit={sendEmail}

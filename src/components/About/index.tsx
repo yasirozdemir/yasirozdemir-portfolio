@@ -7,7 +7,7 @@ const About = () => {
 
   return (
     <section id="about" className="py-10">
-      <div className="custom-container">
+      <div className="container">
         <div className="grid grid-rows-1 sm:grid-cols-2 gap-10">
           <div>
             <H3 innerText="Get to know me!" />

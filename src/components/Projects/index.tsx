@@ -5,7 +5,7 @@ import { ProjectCard } from "../Reusables/ProjectCard";
 const Projects = () => {
   return (
     <section id="projects" className="py-10">
-      <div className="custom-container">
+      <div className="container">
         <div className="flex flex-col">
           <H3 innerText="Projects" customClasses="text-center" />
           <p className="text-md sm:text-lg text-gray-700 text-center mb-4">
