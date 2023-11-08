@@ -1,6 +1,11 @@
 import { ToastOptions } from "react-toastify";
 
-export const hardSkills: { text: string; bg: string }[] = [
+interface ISkill {
+  text: string;
+  bg: string;
+}
+
+export const hardSkills: ISkill[] = [
   { text: "HTML", bg: "#E54B20" },
   { text: "CSS", bg: "#0B73B7" },
   { text: "Javascript", bg: "#D0B237" },

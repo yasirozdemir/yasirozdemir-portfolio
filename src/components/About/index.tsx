@@ -24,7 +24,7 @@ const About = () => {
               </b>{" "}
               to build scalable and user-friendly web applications.
             </p>
-            <p className="text-md sm:text-lg text-gray-700">
+            <p className="mb-4 text-md sm:text-lg text-gray-700">
               I also have{" "}
               <b className="text-cerulean"> diverse international experience</b>
               , having worked at Great Wolf Lodge in the United States, an
@@ -33,7 +33,7 @@ const About = () => {
               developed my
               <b className="text-cerulean">
                 {" "}
-                teamwork, communication, and intercultural skills,
+                teamwork, communication, and intercultural skills
               </b>{" "}
               while learning from colleagues with different backgrounds and
               perspectives.{" "}
@@ -41,6 +41,20 @@ const About = () => {
               full-stack developer in a dynamic and innovative company where I
               can keep enhancing my skills, contribute to exciting projects, and
               make a difference.
+            </p>
+            <p className="text-md sm:text-lg text-gray-700">
+              In addition to my professional identity, I have a different list
+              of hobbies. The first one is{" "}
+              <b className="text-cerulean">aviation</b>. I have always been an
+              aviation geek since I was a kid. I like to spend time on
+              flightradar24. Second,{" "}
+              <b className="text-cerulean">I love to take photos</b> with my
+              phone while I travel around the globe. You can check my Instagram
+              to see the photos taken by me. Adding to these two, I like{" "}
+              <b className="text-cerulean">
+                riding a bike, hiking, working out at the gym, reading books,
+                watching series, and listening to music and podcasts.
+              </b>
             </p>
           </div>
           <div>
