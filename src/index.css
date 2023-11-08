@@ -11,8 +11,8 @@ html {
 
 body {
   font-family: "Kanit", sans-serif;
-  background-color: #d6e8fe;
-  color: #323639;
+  background-color: #182e4e;
+  color: #fff;
 }
 
 img {
@@ -46,11 +46,6 @@ img {
 
 .font-secondary {
   font-family: "DM Serif Display", serif;
-}
-
-#contact .container > div,
-#projects .project_card {
-  background-color: #fff;
 }
 
 .projects-container article + article {

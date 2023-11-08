@@ -8,12 +8,12 @@ const Projects = () => {
       <div className="container">
         <div className="flex flex-col">
           <H3 innerText="Projects" customClasses="text-center" />
-          <p className="text-md sm:text-lg text-gray-700 text-center mb-4">
+          <p className="text-md sm:text-lg  text-center mb-4">
             You can visit my{" "}
             <a
               href="https://github.com/yasirozdemir"
               target="_blank"
-              className="text-onyx font-bold inline-block border-b-[2px] border-onyx leading-4"
+              className="text-mikado_yellow font-bold inline-block border-b-[2px] border-oxford_blue leading-4"
             >
               Github
             </a>{" "}

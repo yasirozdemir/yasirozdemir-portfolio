@@ -1,5 +1,3 @@
-// color palette from -> https://coolors.co/d6e8fe-323639-b5d3fe-8999b3-4d5259
-
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
@@ -7,10 +5,10 @@ export default {
     extend: {
       colors: {
         columbia_blue: "#D6E8FE",
-        onyx: "#323639",
-        uranian_blue: "#B5D3FE",
-        cool_gray: "#8999B3",
-        davys_gray: "#4D5259",
+        oxford_blue: "#09172D",
+        delft_blue: "#182E4E",
+        french_gray: "#B8BCCC",
+        mikado_yellow: "#FFC436",
       },
     },
     container: {

@@ -3,7 +3,7 @@ import { CV_URLs } from "../../data";
 
 const Landing = () => {
   const landingLinkClassNames =
-    "border-b-[3px] border-gray-700 transition-all duration-300 hover:text-onyx hover:border-onyx";
+    "border-b-[3px] border-gray-700 transition-all duration-300 hover:text-mikado_yellow hover:border-oxford_blue";
   return (
     <section id="landing" className="h-dynamic-screen relative">
       <div className="flex flex-col justify-center items-center h-full z-10">
@@ -18,7 +18,7 @@ const Landing = () => {
           />
         </div>
         <div className="text-center">
-          <h1 className="text-5xl md:text-6xl font-semibold text-onyx">
+          <h1 className="text-5xl md:text-6xl font-semibold text-mikado_yellow">
             Yasir Ozdemir
           </h1>
           <TypewriterComponent

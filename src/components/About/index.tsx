@@ -11,54 +11,57 @@ const About = () => {
         <div className="grid grid-rows-1 sm:grid-cols-2 gap-10">
           <div>
             <H3 innerText="Get to know me!" />
-            <p className="mb-4 text-md sm:text-lg text-gray-700">
+            <p className="mb-4 text-md sm:text-lg ">
               As a Full-Stack Developer, I enjoy creating{" "}
-              <b className="text-onyx">innovative</b> and
-              <b className="text-onyx"> impactful</b> solutions using
+              <b className="text-mikado_yellow">innovative</b> and
+              <b className="text-mikado_yellow"> impactful</b> solutions using
               cutting-edge technologies. I have recently graduated from EPICODE,
               a rigorous and intensive full-stack developer boot camp that
               taught me how to use
-              <b className="text-onyx">
+              <b className="text-mikado_yellow">
                 {" "}
                 TypeScript, React, Node.js, Express.js, and MongoDB
               </b>{" "}
               to build scalable and user-friendly web applications.
             </p>
-            <p className="mb-4 text-md sm:text-lg text-gray-700">
+            <p className="mb-4 text-md sm:text-lg ">
               I also have{" "}
-              <b className="text-onyx"> diverse international experience</b>,
-              having worked at Great Wolf Lodge in the United States, an
+              <b className="text-mikado_yellow">
+                {" "}
+                diverse international experience
+              </b>
+              , having worked at Great Wolf Lodge in the United States, an
               Erasmus+ project participation in France, and online digital
               mentorship at Rome Business School. Through these opportunities, I
               developed my
-              <b className="text-onyx">
+              <b className="text-mikado_yellow">
                 {" "}
                 teamwork, communication, and intercultural skills
               </b>{" "}
               while learning from colleagues with different backgrounds and
-              perspectives. <b className="text-onyx">
-                I am looking for a job
-              </b>{" "}
-              as a full-stack developer in a dynamic and innovative company
-              where I can keep enhancing my skills, contribute to exciting
-              projects, and make a difference.
+              perspectives.{" "}
+              <b className="text-mikado_yellow">I am looking for a job</b> as a
+              full-stack developer in a dynamic and innovative company where I
+              can keep enhancing my skills, contribute to exciting projects, and
+              make a difference.
             </p>
-            <p className="text-md sm:text-lg text-gray-700">
+            <p className="text-md sm:text-lg ">
               In addition to my professional identity, I have a different list
-              of hobbies. The first one is <b className="text-onyx">aviation</b>
-              . I have always been an aviation geek since I was a kid. I like to
-              spend time on flightradar24. Second,{" "}
-              <b className="text-onyx">I love to take photos</b> with my phone
-              while I travel around the globe. You can check my{" "}
+              of hobbies. The first one is{" "}
+              <b className="text-mikado_yellow">aviation</b>. I have always been
+              an aviation geek since I was a kid. I like to spend time on
+              flightradar24. Second,{" "}
+              <b className="text-mikado_yellow">I love to take photos</b> with
+              my phone while I travel around the globe. You can check my{" "}
               <a
                 href="https://www.instagram.com/yasirunofficial_"
                 target="_blank"
-                className="text-onyx font-bold inline-block border-b-[2px] border-onyx leading-6"
+                className="text-mikado_yellow font-bold inline-block border-b-[2px] border-oxford_blue leading-6"
               >
                 Instagram
               </a>{" "}
               to see the photos taken by me. Adding to these two, I like{" "}
-              <b className="text-onyx">
+              <b className="text-mikado_yellow">
                 riding a bike, hiking, working out at the gym, reading books,
                 watching series, and listening to music and podcasts.
               </b>
@@ -85,7 +88,7 @@ const About = () => {
               <H3 innerText="Soft Skills" />
               <ul className="flex flex-wrap gap-3">
                 {softSkills.map((skill, i) => (
-                  <li key={i} className={classList + " bg-onyx"}>
+                  <li key={i} className={classList + " bg-oxford_blue"}>
                     {skill}
                   </li>
                 ))}
@@ -95,7 +98,7 @@ const About = () => {
               <H3 innerText="Languages" />
               <ul className="flex flex-wrap gap-3">
                 {languages.map((l, i) => (
-                  <li key={i} className={classList + " bg-onyx"}>
+                  <li key={i} className={classList + " bg-oxford_blue"}>
                     {l.lan}: <i>{l.level}</i>
                   </li>
                 ))}

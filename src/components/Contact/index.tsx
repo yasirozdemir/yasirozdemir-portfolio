@@ -41,7 +41,7 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20">
       <div className="container">
-        <div className="grid grid-rows-1 sm:grid-cols-2 gap-10 shadow-2xl p-6 sm:p-8">
+        <div className="grid grid-rows-1 sm:grid-cols-2 gap-10">
           <div className="flex flex-col justify-center items-center">
             <H3 innerText="Contact me!" customClasses="text-center" />
             <img
