@@ -43,6 +43,7 @@ button#nav-toggle span {
   height: 3px;
   transition: all 500ms;
   position: relative;
+  background-color: #fff;
 }
 
 button#nav-toggle span + span {

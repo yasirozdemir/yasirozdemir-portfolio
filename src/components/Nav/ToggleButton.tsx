@@ -11,9 +11,9 @@ const ToggleButton = ({ isNavVisible, toggleNav }: IToggleButtonProps) => {
       className={isNavVisible ? "toggle" : ""}
       onClick={toggleNav}
     >
-      <span className="bg-white" />
-      <span className="bg-white" />
-      <span className="bg-white" />
+      <span />
+      <span />
+      <span />
     </button>
   );
 };
