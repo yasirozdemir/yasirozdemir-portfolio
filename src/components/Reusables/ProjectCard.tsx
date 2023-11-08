@@ -24,8 +24,7 @@ export const ProjectCard = ({
         <a
           href={github_link}
           target="_blank"
-          className="text-cerulean font-bold inline-block mx-auto md:mx-0 md:self-start"
-          style={{ borderBlockEnd: "2px solid", lineHeight: "1rem" }}
+          className="text-cerulean font-bold inline-block mx-auto md:mx-0 md:self-start border-b-[2px] border-cerulean leading-4"
         >
           View on Github
         </a>

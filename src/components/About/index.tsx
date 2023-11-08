@@ -49,7 +49,14 @@ const About = () => {
               aviation geek since I was a kid. I like to spend time on
               flightradar24. Second,{" "}
               <b className="text-cerulean">I love to take photos</b> with my
-              phone while I travel around the globe. You can check my Instagram
+              phone while I travel around the globe. You can check my{" "}
+              <a
+                href="https://github.com/yasirozdemir"
+                target="_blank"
+                className="text-cerulean font-bold inline-block border-b-[2px] border-cerulean leading-6"
+              >
+                Instagram
+              </a>{" "}
               to see the photos taken by me. Adding to these two, I like{" "}
               <b className="text-cerulean">
                 riding a bike, hiking, working out at the gym, reading books,
