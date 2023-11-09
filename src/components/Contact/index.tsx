@@ -4,9 +4,6 @@ import emailjs from "@emailjs/browser";
 import { alertOptions } from "../../data";
 
 const Contact = () => {
-  const inputClassList =
-    "bg-french_gray px-4 py-2 rounded-md text-delft_blue placeholder:text-delft_blue placeholder:opacity-60";
-  const labelClassList = "text-white font-bold mb-2";
   const { VITE_SERV_ID, VITE_TEMP_ID, VITE_USER_KEY } = import.meta.env;
 
   const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -40,10 +37,27 @@ const Contact = () => {
     }
   };
 
+  const cl =
+    "bg-oxford_blue p-2 rounded-md placeholder:text-french_gray placeholder:opacity-60 font-semibold transition-all duration-[600ms]";
+  const inputClassList = cl + " text-white hover:bg-[#34455D]";
+  const btnClassList =
+    cl + " text-french_gray hover:text-oxford_blue hover:bg-white";
+
   return (
     <section id="contact" className="py-20">
       <div className="container">
         <H3 innerText="Contact me!" customClasses="text-center text-white" />
+        <p className="text-md sm:text-lg text-center mb-10">
+          You can either use the following contact form or message me from{" "}
+          <a
+            href="https://wa.me/message/6NCQR7CPFTAQL1"
+            target="_blank"
+            className="text-mikado_yellow font-bold inline-block border-b-[2px] border-mikado_yellow leading-6"
+          >
+            Whatsapp
+          </a>
+          {"."}
+        </p>
         <div className="grid grid-rows-1 sm:grid-cols-2 gap-10">
           <div className="flex flex-col justify-center items-center">
             <img
@@ -54,48 +68,30 @@ const Contact = () => {
           </div>
           <form
             onSubmit={sendEmail}
-            className="flex flex-col gap-8 rounded-sm text-md sm:text-lg"
+            className="flex flex-col gap-4 rounded-sm text-md sm:text-lg"
           >
-            <div className="flex flex-col">
-              <label htmlFor="user_name" className={labelClassList}>
-                Name
-              </label>
-              <input
-                type="text"
-                name="user_name"
-                id="user_name"
-                placeholder="Your Name"
-                className={inputClassList}
-              />
-            </div>
-            <div className="flex flex-col">
-              <label htmlFor="user_email" className={labelClassList}>
-                Email
-              </label>
-              <input
-                type="email"
-                name="user_email"
-                id="user_email"
-                placeholder="Your Email"
-                className={inputClassList}
-              />
-            </div>
-            <div className="flex flex-col">
-              <label htmlFor="message" className={labelClassList}>
-                Message
-              </label>
-              <textarea
-                name="message"
-                id="message"
-                rows={8}
-                placeholder="Your Message"
-                className={inputClassList}
-              />
-            </div>
-            <button
-              type="submit"
-              className={inputClassList + " sm:self-end min-w-[10rem]"}
-            >
+            <input
+              type="text"
+              name="user_name"
+              id="user_name"
+              placeholder="Your Name"
+              className={inputClassList}
+            />
+            <input
+              type="email"
+              name="user_email"
+              id="user_email"
+              placeholder="Your Email"
+              className={inputClassList}
+            />
+            <textarea
+              name="message"
+              id="message"
+              rows={8}
+              placeholder="Your Message"
+              className={inputClassList}
+            />
+            <button type="submit" className={btnClassList}>
               Send
             </button>
           </form>

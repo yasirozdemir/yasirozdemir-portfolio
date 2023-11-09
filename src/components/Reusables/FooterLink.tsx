@@ -19,7 +19,7 @@ const FooterLink = ({ url }: IFooterLinkProps) => {
       <a href={url} target="_blank">
         <img
           src={"/assets/svgs/" + socialNameFromUrl(url) + ".svg"}
-          alt={socialNameFromUrl(url) || "helo"}
+          alt={socialNameFromUrl(url) || "icon"}
         />
       </a>
     </li>
