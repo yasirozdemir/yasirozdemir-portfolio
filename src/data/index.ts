@@ -38,7 +38,7 @@ export const softSkills = [
 export const languages: { lan: string; level: string }[] = [
   { lan: "Turkish", level: "Native" },
   { lan: "English", level: "Professional" },
-  { lan: "German", level: "Beginner" },
+  { lan: "German", level: "Elementary" },
 ];
 
 export interface IProject {

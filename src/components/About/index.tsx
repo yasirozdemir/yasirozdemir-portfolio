@@ -3,7 +3,7 @@ import { H3 } from "../Reusables/H3";
 
 const About = () => {
   const classList =
-    "px-4 py-2 rounded-md text-[#CFCFCF] shadow-[0_0_15px_0_rgba(0,0,0,0.5)_inset]";
+    "px-4 py-2 rounded-md text-[#CFCFCF] shadow-[0_0_15px_0_rgba(0,0,0,0.5)_inset] bg-oxford_blue font-semibold";
 
   return (
     <section id="about" className="py-10">
@@ -76,7 +76,7 @@ const About = () => {
                 {hardSkills.map((skill, i) => (
                   <li
                     key={i}
-                    className={classList + " bg-oxford_blue"}
+                    className={classList}
                     // style={{
                     //   backgroundColor: skill.bg,
                     // }}
@@ -90,7 +90,7 @@ const About = () => {
               <H3 innerText="Soft Skills" />
               <ul className="flex flex-wrap gap-3">
                 {softSkills.map((skill, i) => (
-                  <li key={i} className={classList + " bg-oxford_blue"}>
+                  <li key={i} className={classList}>
                     {skill}
                   </li>
                 ))}
@@ -100,7 +100,7 @@ const About = () => {
               <H3 innerText="Languages" customClasses="text-white" />
               <ul className="flex flex-wrap gap-3">
                 {languages.map((l, i) => (
-                  <li key={i} className={classList + " bg-oxford_blue"}>
+                  <li key={i} className={classList}>
                     {l.lan}: <i>{l.level}</i>
                   </li>
                 ))}
