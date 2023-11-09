@@ -1,8 +1,7 @@
 import { toast } from "react-toastify";
 import { H3 } from "../Reusables/H3";
 import emailjs from "@emailjs/browser";
-import { alertOptions } from "../../data";
-import "../../styles/contact.css";
+import { alertOptions, textLinkClassList } from "../../data";
 
 const Contact = () => {
   const { VITE_SERV_ID, VITE_TEMP_ID, VITE_USER_KEY } = import.meta.env;
@@ -53,21 +52,18 @@ const Contact = () => {
           <a
             href="https://wa.me/message/6NCQR7CPFTAQL1"
             target="_blank"
-            className="text-mikado_yellow font-bold inline-block border-b-[2px] border-mikado_yellow leading-6"
+            className={textLinkClassList}
           >
             Whatsapp
           </a>
           {"."}
         </p>
-        <div className="grid grid-rows-1 sm:grid-cols-2 gap-10">
-          <div
-            id="illustration"
-            className="relative flex flex-col justify-center items-center"
-          >
+        <div className="grid grid-rows-1 md:grid-cols-2 gap-10">
+          <div className="flex flex-col justify-center items-center">
             <img
               src="https://res.cloudinary.com/yasirdev/image/upload/v1680865177/portfolio/Contact-us_imkk4f.png"
               alt="Illustration from freesvgillustration.com"
-              className="max max-w-full max-h-[400px]"
+              className="max-w-full max-h-[400px]"
             />
           </div>
           <form

@@ -9,7 +9,7 @@ export const ProjectCard = ({
   youtube_url,
 }: IProject) => {
   const linkClassList =
-    "text-delft_blue hover:text-oxford_blue font-bold inline-block border-b-[2px] transition-all border-delft_blue hover:border-oxford_blue leading-4";
+    "text-delft_blue font-bold inline-block border-b-[2px] transition-all border-delft_blue leading-4 hover:border-oxford_blue hover:text-oxford_blue";
   return (
     <article className="rounded-sm shadow-2xl grid grid-rows-1 md:grid-cols-2 sm:gap-4 md:gap-10 overflow-hidden bg-french_gray">
       <div className="my-auto overflow-hidden rounded-l-sm">

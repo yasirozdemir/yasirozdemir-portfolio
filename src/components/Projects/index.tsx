@@ -1,4 +1,4 @@
-import { projects } from "../../data";
+import { projects, textLinkClassList } from "../../data";
 import { H3 } from "../Reusables/H3";
 import { ProjectCard } from "../Reusables/ProjectCard";
 
@@ -13,7 +13,7 @@ const Projects = () => {
             <a
               href="https://github.com/yasirozdemir"
               target="_blank"
-              className="text-mikado_yellow font-bold inline-block border-b-[2px] border-mikado_yellow leading-6"
+              className={textLinkClassList}
             >
               Github
             </a>{" "}

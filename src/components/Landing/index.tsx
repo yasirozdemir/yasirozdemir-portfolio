@@ -56,7 +56,7 @@ const Landing = () => {
             target="_blank"
             className={landingLinkClassNames}
           >
-            View my Resume
+            View my resume
           </a>
         </div>
       </div>

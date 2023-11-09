@@ -9,7 +9,7 @@ const Footer = () => {
           <FooterLink key={i} url={el.url} />
         ))}
       </ul>
-      <p className="text-center pb-4 text-white">© 2023 Yasir Ozdemir</p>
+      <p className="text-center pb-4 text-[#B8BCCC]">© 2023 Yasir Ozdemir</p>
     </footer>
   );
 };

@@ -28,9 +28,9 @@ const Nav = () => {
   // true -> sticky nav | false -> fixed nav
   const navClassList = isNavSticky
     ? "sticky"
-    : "fixed left-[50%] translate-x-[-50%] w-[95vw] sm:w-fit rounded-b-lg";
+    : "fixed left-[50%] translate-x-[-50%] w-[95vw] md:w-fit rounded-b-lg";
 
-  const navMenuClassList = `flex flex-col sm:flex-row justify-center items-center sm:text-xl z-10 bg-inherit rounded-lg 
+  const navMenuClassList = `flex flex-col md:flex-row justify-center items-center md:text-xl z-10 bg-inherit rounded-lg 
         ${isNavVisible && "show"} 
         ${isNavSticky && "mx-2"}`;
 
@@ -38,11 +38,11 @@ const Nav = () => {
     <nav
       className={
         navClassList +
-        " top-0 z-20 h-[60px] flex sm:justify-center sm:items-center bg-oxford_blue text-white"
+        " top-0 z-20 h-[60px] flex md:justify-center md:items-center bg-oxford_blue text-white"
       }
       ref={navRef}
     >
-      <div className="flex sm:hidden justify-between items-center px-4 py-4 w-full">
+      <div className="flex md:hidden justify-between items-center px-4 py-4 w-full">
         <a href="#landing" className="text-xl font-bold">
           Yasir O.
         </a>
