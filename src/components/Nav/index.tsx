@@ -30,9 +30,8 @@ const Nav = () => {
     ? "sticky"
     : "fixed left-[50%] translate-x-[-50%] w-[95vw] md:w-fit rounded-b-lg";
 
-  const navMenuClassList = `flex flex-col md:flex-row justify-center items-center md:text-xl z-10 bg-inherit rounded-lg 
-        ${isNavVisible && "show"} 
-        ${isNavSticky && "mx-2"}`;
+  const navMenuClassList = `flex flex-col md:flex-row justify-center items-center md:text-xl z-10 bg-inherit rounded-lg
+        ${isNavVisible && "show"}`;
 
   return (
     <nav
@@ -42,7 +41,7 @@ const Nav = () => {
       }
       ref={navRef}
     >
-      <div className="flex md:hidden justify-between items-center px-4 py-4 w-full">
+      <div className="flex md:hidden justify-between items-center px-4 py-4 w-full container">
         <a href="#landing" className="text-xl font-bold">
           Yasir O.
         </a>
