@@ -94,7 +94,7 @@ const About = () => {
               </ul>
             </div>
             <div className="mb-10">
-              <H3 innerText="Soft Skills" />
+              <H3 innerText="Soft Skills" customClasses="text-white" />
               <ul className="flex flex-wrap gap-3">
                 {softSkills.map((skill, i) => (
                   <li key={i} className={badgeClassList}>
