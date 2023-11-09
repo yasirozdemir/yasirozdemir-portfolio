@@ -41,25 +41,29 @@ export const languages: { lan: string; level: string }[] = [
   { lan: "German", level: "Beginner" },
 ];
 
-export const projects: {
+export interface IProject {
   title: string;
   summary: string;
-  github_link: string;
+  github_url: string;
   img_src: string;
-}[] = [
+  youtube_url?: string;
+}
+
+export const projects: IProject[] = [
   {
     title: "What ai Movie",
     summary:
       "What ai Movie is a web app that users can search for movies depending on their feeling, thoughts or desires.",
-    github_link: "https://github.com/yasirozdemir/capstone-project-fe",
+    github_url: "https://github.com/yasirozdemir/capstone-project-fe",
+    youtube_url: "https://youtu.be/_rA3CapbmYA?si=0kZ3mO9ND6Adj2xW",
     img_src:
       "https://res.cloudinary.com/yasirdev/image/upload/v1684784752/portfolio/projects/11_wzqban.png",
   },
   {
     title: "LinkedIn Clone",
     summary:
-      "A clone that users can play music, have a look at the albums and artist.",
-    github_link: "https://github.com/yasirozdemir/u3-bw-linkedin",
+      "A clone that users can create their profiles, add experiences, and see what others posted.",
+    github_url: "https://github.com/yasirozdemir/u3-bw-linkedin",
     img_src:
       "https://res.cloudinary.com/yasirdev/image/upload/v1684745973/portfolio/projects/linkedin_pexq2v.jpg",
   },
@@ -67,7 +71,7 @@ export const projects: {
     title: "Spotify Clone",
     summary:
       "A clone that users can play music, have a look at the albums and artist.",
-    github_link: "https://github.com/pappkartoni/U2-BW-Deezify",
+    github_url: "https://github.com/pappkartoni/U2-BW-Deezify",
     img_src:
       "https://res.cloudinary.com/yasirdev/image/upload/v1684745973/portfolio/projects/spotify_fd2uks.jpg",
   },
@@ -75,7 +79,7 @@ export const projects: {
     title: "Epicode Benchmark",
     summary:
       "Epicode's benchmark webpage. It's basically a quiz app with 10 questions, a timer, and a result page.",
-    github_link: "https://github.com/Flovedev/U1-W4-BuildWeek",
+    github_url: "https://github.com/Flovedev/U1-W4-BuildWeek",
     img_src:
       "https://res.cloudinary.com/yasirdev/image/upload/v1684745973/portfolio/projects/epicode_rio1gr.jpg",
   },

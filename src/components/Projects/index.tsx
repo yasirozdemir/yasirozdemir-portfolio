@@ -13,7 +13,7 @@ const Projects = () => {
             <a
               href="https://github.com/yasirozdemir"
               target="_blank"
-              className="text-mikado_yellow font-bold inline-block border-b-[2px] border-oxford_blue leading-4"
+              className="text-mikado_yellow font-bold inline-block border-b-[2px] border-mikado_yellow leading-6"
             >
               Github
             </a>{" "}
@@ -21,15 +21,18 @@ const Projects = () => {
           </p>
         </div>
         <div className="projects-container mt-10">
-          {projects.map(({ title, summary, github_link, img_src }, i) => (
-            <ProjectCard
-              key={i}
-              title={title}
-              summary={summary}
-              github_link={github_link}
-              img_src={img_src}
-            />
-          ))}
+          {projects.map(
+            ({ title, summary, github_url, img_src, youtube_url }, i) => (
+              <ProjectCard
+                key={i}
+                title={title}
+                summary={summary}
+                github_url={github_url}
+                img_src={img_src}
+                youtube_url={youtube_url}
+              />
+            )
+          )}
         </div>
       </div>
     </section>
