@@ -24,9 +24,22 @@ const Nav = () => {
     };
   }, []);
 
+  const isNavSticky = true;
+  // true -> sticky nav | false -> fixed nav
+  const navClassList = isNavSticky
+    ? "sticky"
+    : "fixed left-[50%] translate-x-[-50%] w-[95vw] sm:w-fit rounded-b-lg";
+
+  const navMenuClassList = `flex flex-col sm:flex-row justify-center items-center sm:text-xl z-10 bg-inherit rounded-lg 
+        ${isNavVisible && "show"} 
+        ${isNavSticky && "mx-2"}`;
+
   return (
     <nav
-      className="fixed top-0 left-[50%] translate-x-[-50%] w-[95vw] sm:w-fit flex sm:justify-center sm:items-center z-20 h-[60px] rounded-b-lg shadow-[0_5px_50px_rgb(0,0,0,0.35)] bg-oxford_blue text-white"
+      className={
+        navClassList +
+        " top-0 z-20 h-[60px] flex sm:justify-center sm:items-center shadow-[0_5px_50px_rgb(0,0,0,0.35)] bg-oxford_blue text-white"
+      }
       ref={navRef}
     >
       <div className="flex sm:hidden justify-between items-center px-4 py-4 w-full">
@@ -35,12 +48,7 @@ const Nav = () => {
         </a>
         <ToggleButton isNavVisible={isNavVisible} toggleNav={toggleNav} />
       </div>
-      <ul
-        id="nav-menu"
-        className={`flex flex-col sm:flex-row justify-center items-center sm:text-xl z-10 bg-inherit rounded-lg ${
-          isNavVisible ? "show" : ""
-        }`}
-      >
+      <ul id="nav-menu" className={navMenuClassList}>
         <NavLink title="about" toggleNav={toggleNav} />
         <NavLink title="projects" toggleNav={toggleNav} />
         <NavLink title="contact" toggleNav={toggleNav} />

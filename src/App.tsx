@@ -10,8 +10,8 @@ import "react-toastify/dist/ReactToastify.css";
 function App() {
   return (
     <>
-      <Nav />
       <Landing />
+      <Nav />
       <About />
       <Projects />
       <Contact />
