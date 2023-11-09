@@ -5,10 +5,11 @@ const Landing = () => {
   const landingLinkClassNames =
     "border-b-[3px] text-white border-white transition-all duration-300 hover:text-mikado_yellow hover:border-mikado_yellow";
   return (
-    <section id="landing" className="h-dynamic-screen relative">
-      <div className="flex flex-col justify-center items-center h-full z-10">
+    <section id="landing" className="h-dynamic-screen relative bg-oxford_blue">
+      <div className="absolute top-0 h-[50%] w-full bg-cover bg-center bg-oxford_blue bg-[url(https://res.cloudinary.com/yasirdev/image/upload/v1680299481/portfolio/bg_yfxulf.jpg)]" />
+      <div className="flex flex-col justify-center items-center h-full z-10 relative">
         <div
-          className="relative mb-10 max-w-[15rem] sm:max-w-sm overflow-hidden shadow-2xl"
+          className="mb-10 max-w-[15rem] sm:max-w-sm overflow-hidden shadow-2xl border-[8px] border-oxford_blue"
           style={{ borderRadius: "70% 30% 70% 30% / 30% 73% 27% 70%" }}
         >
           <img
