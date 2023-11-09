@@ -75,6 +75,7 @@ const Contact = () => {
               name="user_name"
               id="user_name"
               placeholder="Your Name"
+              required
               className={inputClassList}
             />
             <input
@@ -82,6 +83,7 @@ const Contact = () => {
               name="user_email"
               id="user_email"
               placeholder="Your Email"
+              required
               className={inputClassList}
             />
             <textarea
@@ -89,6 +91,7 @@ const Contact = () => {
               id="message"
               rows={8}
               placeholder="Your Message"
+              required
               className={inputClassList}
             />
             <button type="submit" className={btnClassList}>
