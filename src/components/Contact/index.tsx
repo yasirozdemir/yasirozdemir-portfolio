@@ -2,6 +2,7 @@ import { toast } from "react-toastify";
 import { H3 } from "../Reusables/H3";
 import emailjs from "@emailjs/browser";
 import { alertOptions } from "../../data";
+import "../../styles/contact.css";
 
 const Contact = () => {
   const { VITE_SERV_ID, VITE_TEMP_ID, VITE_USER_KEY } = import.meta.env;
@@ -48,7 +49,7 @@ const Contact = () => {
       <div className="container">
         <H3 innerText="Contact me!" customClasses="text-center text-white" />
         <p className="text-md sm:text-lg text-center mb-10">
-          You can either use the following contact form or message me from{" "}
+          You can either use the following contact form or message me on{" "}
           <a
             href="https://wa.me/message/6NCQR7CPFTAQL1"
             target="_blank"
@@ -59,7 +60,10 @@ const Contact = () => {
           {"."}
         </p>
         <div className="grid grid-rows-1 sm:grid-cols-2 gap-10">
-          <div className="flex flex-col justify-center items-center">
+          <div
+            id="illustration"
+            className="relative flex flex-col justify-center items-center"
+          >
             <img
               src="https://res.cloudinary.com/yasirdev/image/upload/v1680865177/portfolio/Contact-us_imkk4f.png"
               alt="Illustration from freesvgillustration.com"

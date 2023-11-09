@@ -38,7 +38,7 @@ const Nav = () => {
     <nav
       className={
         navClassList +
-        " top-0 z-20 h-[60px] flex sm:justify-center sm:items-center shadow-[0_5px_50px_rgb(0,0,0,0.35)] bg-oxford_blue text-white"
+        " top-0 z-20 h-[60px] flex sm:justify-center sm:items-center bg-oxford_blue text-white"
       }
       ref={navRef}
     >
