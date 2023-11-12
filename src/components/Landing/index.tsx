@@ -4,6 +4,7 @@ import { CV_URLs } from "../../data";
 const Landing = () => {
   const landingLinkClassNames =
     "border-b-[3px] text-white border-white transition-all duration-300 hover:text-mikado_yellow hover:border-mikado_yellow";
+
   return (
     <section id="landing" className="h-dynamic-screen relative bg-oxford_blue">
       <div className="absolute top-0 h-[50%] w-full bg-cover bg-center bg-oxford_blue bg-[url(https://res.cloudinary.com/yasirdev/image/upload/v1680299481/portfolio/bg_yfxulf.jpg)]" />
@@ -15,7 +16,9 @@ const Landing = () => {
           <img
             src="/assets/yo.jpeg"
             alt="Yasir Ozdemir Photo"
-            className="w-100"
+            className="max-w-full h-auto align-middle italic bg-no-repeat bg-cover bg-[url(/assets/yo-lowres.jpeg)]"
+            width="500px"
+            height="500px"
           />
         </div>
         <div className="text-center">
@@ -46,7 +49,7 @@ const Landing = () => {
             }}
           />
         </div>
-        <div className="absolute bottom-4 md:h-[60px] flex flex-col md:flex-row gap-2 md:gap-6 mt-10 text-lg md:text-xl font-extrabold items-center justify-center">
+        <div className="mt-3 sm:mt-4 md:mt-5 lg:mt-10 flex flex-col md:flex-row gap-2 md:gap-6 text-lg md:text-xl font-extrabold items-center justify-center">
           <a href="#about" className={landingLinkClassNames}>
             Get to know me
           </a>
