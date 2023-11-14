@@ -1,7 +1,7 @@
 import { ToastOptions } from "react-toastify";
 
 export const textLinkClassList =
-  "text-mikado_yellow inline-block border-b-[2px] border-mikado_yellow leading-6 transition-all hover:text-[#FF8935] hover:border-[#FF8935]";
+  "text-mikado_yellow inline-block border-b-[2px] border-mikado_yellow leading-6 transition-all hover:text-orange-400 hover:border-orange-400";
 
 interface ISkill {
   text: string;

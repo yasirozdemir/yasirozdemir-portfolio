@@ -20,7 +20,7 @@ export const ProjectCard = ({
         <p className="text-md sm:text-lg mb-4 text-delft_blue -mt-2">
           {summary}
         </p>
-        <div className="flex flex-wrap gap-2 sm:gap-4">
+        <div className="flex flex-wrap gap-2 sm:gap-4 justify-center items-center">
           <a href={github_url} target="_blank" className={linkClassList}>
             View on Github
           </a>

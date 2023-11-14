@@ -52,7 +52,15 @@ const About = () => {
               </span>{" "}
               as a full-stack developer in a dynamic and innovative company
               where I can keep enhancing my skills, contribute to exciting
-              projects, and make a difference.
+              projects, and make a difference. Check my{" "}
+              <a
+                href="https://www.linkedin.com/in/yasirozdemir"
+                target="_blank"
+                className={textLinkClassList}
+              >
+                LinkedIn
+              </a>{" "}
+              account.
             </p>
             <p className={pClassList}>
               In addition to my professional identity, I have a different list
