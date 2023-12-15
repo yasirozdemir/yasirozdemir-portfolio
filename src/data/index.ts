@@ -104,9 +104,7 @@ export const footerLinkData: { url: string }[] = [
   { url: "https://www.github.com/yasirozdemir" },
   { url: "https://www.instagram.com/yasirunofficial_" },
   { url: "https://www.youtube.com/@MuhammedYasirOzdemir" },
-  { url: "https://www.medium.com/@muhammedyasirozdemir" },
+  { url: "https://www.medium.com/@myasirozdemir" },
 ];
 
-export const CV_URLs = {
-  EN: "/assets/CVs/M_Yasir_Ozdemir_CV_EN.pdf",
-};
+export const ResumeSrc = "/resume/Yasir_Ozdemir_CV.pdf";

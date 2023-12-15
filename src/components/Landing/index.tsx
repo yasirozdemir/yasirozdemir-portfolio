@@ -1,5 +1,5 @@
 import TypewriterComponent from "typewriter-effect";
-import { CV_URLs } from "../../data";
+import { ResumeSrc } from "../../data";
 
 const Landing = () => {
   const landingLinkClassNames =
@@ -56,11 +56,7 @@ const Landing = () => {
             Get to know me
           </a>
           <span className="hidden md:inline-block text-gray-500">or</span>
-          <a
-            href={CV_URLs.EN}
-            target="_blank"
-            className={landingLinkClassNames}
-          >
+          <a href={ResumeSrc} target="_blank" className={landingLinkClassNames}>
             View my resume
           </a>
         </div>
