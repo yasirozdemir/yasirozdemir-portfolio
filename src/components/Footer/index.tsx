@@ -26,7 +26,7 @@ const Footer = () => {
           </li>
         ))}
       </ul>
-      <p className="text-center pb-4 text-[#B8BCCC]">© 2023 Yasir Ozdemir</p>
+      <p className="text-center pb-4 text-[#B8BCCC]">© 2024 Yasir Ozdemir</p>
     </footer>
   );
 };
