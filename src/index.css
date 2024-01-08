@@ -43,3 +43,15 @@ img {
 .projects-container article + article {
   margin-block-start: 3rem;
 }
+
+#landing svg#scroll-indicator {
+  stroke: rgb(255, 255, 255);
+  animation: bounce 3s ease infinite;
+}
+
+@keyframes bounce {
+  50% {
+    transform: translateY(-30%);
+    stroke: rgb(156, 163, 175);
+  }
+}

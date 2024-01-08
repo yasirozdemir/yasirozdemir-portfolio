@@ -14,6 +14,9 @@ const Footer = () => {
 
   return (
     <footer className="bg-oxford_blue text-text-white">
+      <p className="text-center text-sm font-bold pt-4 text-[#B8BCCC]">
+        "Work hard in silence, let the success make the noise."
+      </p>
       <ul className="flex flex-wrap py-4 justify-center items-center gap-4">
         {footerLinkData.map(({ url }, i) => (
           <li key={i}>

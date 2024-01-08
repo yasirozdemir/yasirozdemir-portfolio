@@ -5,6 +5,7 @@ import {
   textLinkClassList,
 } from "../../data";
 import { H3 } from "../Reusables/H3";
+import { ResumeSrc } from "../../data";
 
 const About = () => {
   const badgeClassList =
@@ -15,6 +16,12 @@ const About = () => {
   return (
     <section id="about" className="py-10">
       <div className="container">
+        <a href={ResumeSrc} target="_blank" className="block w-fit mx-auto">
+          <H3
+            innerText="View my Resume!"
+            customClasses="text-mikado_yellow border-b-2 border-mikado_yellow"
+          />
+        </a>
         <div className="grid grid-rows-1 md:grid-cols-2 gap-10">
           <div>
             <H3 innerText="Get to know me!" customClasses="text-white" />
