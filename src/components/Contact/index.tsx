@@ -48,15 +48,8 @@ const Contact = () => {
       <div className="container">
         <H3 innerText="Contact me!" customClasses="text-center text-white" />
         <p className="text-md sm:text-lg text-center mb-10">
-          You can either use the following contact form or message me on{" "}
-          <a
-            href="https://wa.me/message/6NCQR7CPFTAQL1"
-            target="_blank"
-            className={textLinkClassList}
-          >
-            Whatsapp
-          </a>
-          {"."}
+          Feel free to contact me for your questions or for job offers. I'll
+          respond to your mail as soon as possible. 🙂
         </p>
         <div className="grid grid-rows-1 md:grid-cols-2 gap-10">
           <div className="flex flex-col justify-center items-center">

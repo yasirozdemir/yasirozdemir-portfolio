@@ -11,7 +11,7 @@ const About = () => {
   const badgeClassList =
     "badge px-4 py-2 rounded-md text-[#CFCFCF] shadow-[0_0_15px_0_rgba(0,0,0,0.5)_inset] bg-oxford_blue font-semibold";
 
-  const pClassList = "text-md md:text-lg mb-4 [&>b]:text-mikado_yellow";
+  const pClassList = "text-md md:text-lg mb-4 [&>span]:text-mikado_yellow";
 
   return (
     <section id="about" className="py-10">
@@ -26,21 +26,28 @@ const About = () => {
           <div>
             <H3 innerText="Get to know me!" customClasses="text-white" />
             <p className={pClassList}>
-              As a Full-Stack Developer, I enjoy creating <b>innovative</b> and
-              <b> impactful</b> solutions using cutting-edge technologies. I
-              have recently graduated from EPICODE, a rigorous and intensive
+              As a Full-Stack Developer, I enjoy creating{" "}
+              <span>innovative</span> and
+              <span> impactful</span> solutions using cutting-edge technologies.
+              I have recently graduated from EPICODE, a rigorous and intensive
               full-stack developer boot camp that taught me how to use
-              <b> TypeScript, React, Node.js, Express.js, and MongoDB</b> to
-              build scalable and user-friendly web applications.
+              <span>
+                {" "}
+                TypeScript, React, Node.js, Express.js, and MongoDB
+              </span>{" "}
+              to build scalable and user-friendly web applications.
             </p>
             <p className={pClassList}>
-              I also have <b> diverse international experience</b>, having
+              I also have <span> diverse international experience</span>, having
               worked at Great Wolf Lodge in the United States, an Erasmus+
               project participation in France, and online digital mentorship at
               Rome Business School. Through these opportunities, I developed my
-              <b> teamwork, communication, and intercultural skills</b> while
-              learning from colleagues with different backgrounds and
-              perspectives. <b>I am looking for a job</b> as a full-stack
+              <span>
+                {" "}
+                teamwork, communication, and intercultural skills
+              </span>{" "}
+              while learning from colleagues with different backgrounds and
+              perspectives. <span>I am looking for a job</span> as a full-stack
               developer in a dynamic and innovative company where I can keep
               enhancing my skills, contribute to exciting projects, and make a
               difference. Check my{" "}
@@ -55,22 +62,22 @@ const About = () => {
             </p>
             <p className={pClassList}>
               In addition to my professional identity, I have a different list
-              of hobbies. The first one is <b>aviation</b>. I have always been
-              an aviation geek since I was a kid. I like to spend time on
-              flightradar24. Second, <b>I love to take photos</b> with my phone
-              while I travel around the globe. You can check my{" "}
+              of hobbies. The first one is <span>aviation</span>. I have always
+              been an aviation geek since I was a kid. I like to spend time on
+              flightradar24. Second, <span>I love to take photos</span> with my
+              phone while I travel around the globe. You can check my{" "}
               <a
-                href="https://www.instagram.com/yasirunofficial_"
+                href="https://www.instagram.com/photos.by.yasir"
                 target="_blank"
                 className={textLinkClassList}
               >
                 Instagram
               </a>{" "}
               to see the photos taken by me. Adding to these two, I like{" "}
-              <b>
+              <span>
                 riding a bike, hiking, working out at the gym, reading books,
                 watching series, and listening to music and podcasts.
-              </b>
+              </span>
             </p>
           </div>
           <div>
