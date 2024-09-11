@@ -1,7 +1,7 @@
 import { toast } from "react-toastify";
 import { H3 } from "../Reusables/H3";
 import emailjs from "@emailjs/browser";
-import { alertOptions, textLinkClassList } from "../../data";
+import { alertOptions } from "../../data";
 
 const Contact = () => {
   const { VITE_SERV_ID, VITE_TEMP_ID, VITE_USER_KEY } = import.meta.env;
